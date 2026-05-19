@@ -2,7 +2,7 @@
 
 ![JNNCE Hero](img/campus/camp11.jpeg)
 
-Official modernized web portal for the **Master of Computer Applications (MCA)** department at Jawaharlal Nehru National College of Engineering (JNNCE), Shivamogga. 
+Official modernized web portal for the **Master of Computer Applications (MCA)** department at Jawaharlal Nehru National College of Engineering (JNNCE), Shivamogga.
 
 This project aims to provide a premium, mobile-first, and highly performant digital experience for students, faculty, and prospective candidates.
 
@@ -46,6 +46,7 @@ This project aims to provide a premium, mobile-first, and highly performant digi
 Since this project has zero dependencies or build-steps, you don't need Node.js or any build tools to run it.
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/kiranss7/JNNCE_MCA_Website.git
    ```
