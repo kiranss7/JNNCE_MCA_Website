@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities Details | JNNCE Master of Computer Applications</title>
+    <meta name="description" content="Detailed visual portfolios and information regarding laboratories, stadium, library, hostel, cooperative society, and canteen environments at JNNCE.">
+    <link rel="canonical" href="https://jnnce.ac.in/jnndemo/mca/facilities-detail.html">
+    <link rel="icon" type="image/png" href="img/clglogo.png">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jnnce.ac.in/jnndemo/mca/facilities-detail.html">
+    <meta property="og:title" content="Facilities Details | JNNCE Master of Computer Applications">
+    <meta property="og:description" content="Detailed visual portfolios and information regarding laboratories, stadium, library, hostel, cooperative society, and canteen environments at JNNCE.">
+    <meta property="og:image" content="img/clglogo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jnnce.ac.in/jnndemo/mca/facilities-detail.html">
+    <meta property="twitter:title" content="Facilities Details | JNNCE Master of Computer Applications">
+    <meta property="twitter:description" content="Detailed visual portfolios and information regarding laboratories, stadium, library, hostel, cooperative society, and canteen environments at JNNCE.">
+    <meta property="twitter:image" content="img/clglogo.png">
+
+    <link rel="preload" href="css/style.css?v=1.1" as="style">
+  <link rel="preload" href="img/clglogo.png" as="image" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.1">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="departments.html">About Us</a></li>
+                <li><a href="faculty-mca.html">Faculty</a></li>
+                <li class="dropdown">
+                    <a href="facilities.html" class="active">Facilities <i class="fa-solid fa-chevron-down style-ref-i-1"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="facilities.html#jnnce-events">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Master of Computer Applications</span>
+            </a>
+            <div class="menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header style-ref-header-2">
+        <div class="container">
+            <h1 id="facilities-title">Facilities</h1>
+            <p class="style-ref-p-23" id="facilities-desc"></p>
+        </div>
+    </header>
+
+    <!-- Facilities Content -->
+    <section class="section style-ref-section-3">
+        <div class="container">
+            <div class="style-ref-div-17">
+                <a href="facilities.html" class="btn btn-outline style-ref-a-24"><i
+                        class="fa-solid fa-arrow-left"></i> Back to Facilities</a>
+            </div>
+
+            <!-- Sports Section Information -->
+            <style>
+                .sports-layout-flex {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 40px;
+                    align-items: flex-start;
+                    justify-content: center;
+                    margin-bottom: 3rem;
+                }
+
+                .sports-sidebar {
+                    flex: 0 0 340px;
+                }
+
+                .sports-main-content {
+                    flex: 1 1 500px;
+                }
+
+                @media (max-width: 768px) {
+
+                    .sports-sidebar,
+                    .sports-main-content {
+                        flex: 1 1 100%;
+                    }
+                }
+
+                .sports-flex {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+                    margin-bottom: 3rem;
+                }
+
+                .sports-tables-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 40px;
+                    margin-bottom: 3rem;
+                    align-items: start;
+                }
+
+                @media (max-width: 1024px) {
+                    .sports-tables-grid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+
+                /* Modern Profile Card */
+                .sports-profile-card {
+                    margin: 0;
+                    cursor: default;
+                    width: 100%;
+                    position: sticky;
+                    top: 120px;
+                    background: #ffffff;
+                    border: 1px solid rgba(10, 25, 47, 0.05);
+                    border-radius: 16px;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                    padding-bottom: 1rem;
+                    overflow: hidden;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .sports-profile-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+                }
+
+                /* Typography */
+                .sports-heading {
+                    color: var(--primary-color);
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                }
+
+                .sports-subheading {
+                    color: var(--secondary-color);
+                    margin-bottom: 0.8rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                }
+
+                .sports-text {
+                    color: #555;
+                    line-height: 1.7;
+                }
+
+
+
+                /* Modern Table */
+
+
+                /* Sports Dropdown Toggle Styles */
+                .sports-dropdown-container {
+                    margin: 0.5rem 0 1rem;
+                    width: 100%;
+                }
+
+                .sports-toggle-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: linear-gradient(135deg, var(--primary-color) 0%, #1a3a6e 100%);
+                    color: white;
+                    padding: 1.2rem 2rem;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    box-shadow: 0 4px 15px rgba(10, 25, 47, 0.15);
+                }
+
+                .sports-toggle-header:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 8px 25px rgba(10, 25, 47, 0.25);
+                }
+
+                .sports-toggle-header h3 {
+                    margin: 0;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                }
+
+                .sports-toggle-icon {
+                    width: 32px;
+                    height: 32px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.2rem;
+                    transition: transform 0.4s ease, background 0.3s ease;
+                }
+
+                .sports-toggle-header.active .sports-toggle-icon {
+                    transform: rotate(45deg);
+                    background: var(--secondary-color);
+                    color: var(--primary-color);
+                }
+
+                .sports-collapsible-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.6s cubic-bezier(0, 1, 0, 1);
+                    opacity: 0;
+                    pointer-events: none;
+                }
+
+                .sports-collapsible-content.expanded {
+                    max-height: 10000px;
+                    opacity: 1;
+                    pointer-events: all;
+                    transition: max-height 1s ease-in, opacity 0.5s ease-in;
+                    margin-top: 1.5rem;
+                }
+
+                /* ================== Infinite Recruiters Marquee ================== */
+                .placement-marquee-section {
+                    margin-top: 1rem;
+                    margin-bottom: 3.5rem;
+                    overflow: hidden;
+                    padding: 1.5rem 0;
+                    position: relative;
+                    width: 100%;
+                    background: rgba(248, 250, 252, 0.6);
+                    border-radius: 16px;
+                    border: 1px solid rgba(11, 31, 58, 0.05);
+                }
+
+                .placement-marquee-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    position: relative;
+                    width: 100%;
+                }
+
+                .marquee-row {
+                    display: flex;
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+                    mask-image: linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+                }
+
+                .marquee-inner {
+                    display: flex;
+                    gap: 1.5rem;
+                    width: max-content;
+                    padding: 0.5rem 0;
+                }
+
+                .marquee-inner-left {
+                    animation: scroll-left 55s linear infinite;
+                }
+
+                .marquee-inner-right {
+                    animation: scroll-right 55s linear infinite;
+                }
+
+                .marquee-row:hover .marquee-inner {
+                    animation-play-state: paused;
+                }
+
+                @keyframes scroll-left {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(-50%);
+                    }
+                }
+
+                @keyframes scroll-right {
+                    0% {
+                        transform: translateX(-50%);
+                    }
+                    100% {
+                        transform: translateX(0);
+                    }
+                }
+
+                /* Modern Recruiter Card */
+                .company-card {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                    background: #ffffff;
+                    border: 1px solid rgba(11, 31, 58, 0.06);
+                    border-radius: 12px;
+                    padding: 0.8rem 1.8rem;
+                    height: 54px;
+                    box-shadow: 0 4px 12px rgba(2, 6, 23, 0.03);
+                    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    cursor: pointer;
+                    flex-shrink: 0;
+                    -webkit-user-select: none;
+                    user-select: none;
+                }
+
+                .company-card:hover {
+                    transform: translateY(-3px) scale(1.02);
+                    box-shadow: 0 8px 20px rgba(11, 31, 58, 0.12);
+                    border-color: var(--secondary-color);
+                }
+
+                .company-logo {
+                    height: 24px;
+                    max-width: 100px;
+                    object-fit: contain;
+                    filter: grayscale(100%) opacity(80%);
+                    transition: all 0.3s ease;
+                }
+
+                .company-card:hover .company-logo {
+                    filter: grayscale(0%) opacity(100%);
+                }
+
+                .company-text {
+                    font-family: var(--font-heading);
+                    font-size: 1.05rem;
+                    font-weight: 700;
+                    color: var(--primary-color);
+                    letter-spacing: -0.2px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    white-space: nowrap;
+                }
+
+                .company-card:hover .company-text {
+                    color: var(--primary-color);
+                }
+
+                .company-card-icon {
+                    font-size: 1.1rem;
+                    color: var(--secondary-color);
+                    transition: transform 0.3s ease;
+                }
+
+                .company-card:hover .company-card-icon {
+                    transform: rotate(15deg) scale(1.15);
+                }
+
+                @media (max-width: 768px) {
+                    .placement-marquee-section {
+                        padding: 1rem 0;
+                        border-radius: 12px;
+                    }
+                    .company-card {
+                        padding: 0.6rem 1.4rem;
+                        height: 48px;
+                    }
+                    .company-text {
+                        font-size: 0.95rem;
+                    }
+                    .company-logo {
+                        height: 20px;
+                    }
+                    .marquee-inner-left, .marquee-inner-right {
+                        animation-duration: 40s;
+                    }
+                }
+            </style>
+            <div class="style-ref-div-25" id="sports-info">
+                <div class="style-ref-div-26">
+                    <h2 class="style-ref-h2-27">Sports and Physical Education</h2>
+                    <div class="style-ref-div-28">
+                    </div>
+                    <blockquote class="style-ref-blockquote-29">
+                        "Never say never because limits, like fears, are often just an illusion." — <span class="style-ref-span-30">Michael Jordan</span>
+                    </blockquote>
+                </div>
+
+                <!-- About the Department Dropdown -->
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="sportsToggle">
+                        <h3><i class="fa-solid fa-circle-info"></i> About Department & Facilities</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+
+                    <div class="sports-collapsible-content" id="sportsContent">
+                        <!-- About the Department -->
+                        <div class="style-ref-div-31">
+                            <h3 class="style-ref-h3-32">About the
+                                Department</h3>
+                            <p class="sports-text style-ref-p-22">The Department of Physical Education and
+                                Sports was started in the year <strong>1980</strong>. JNNCE sports department aims at
+                                all-round development of the student's personality through sports activities. Presently,
+                                the department has <strong>7 staff members</strong>.</p>
+                            <p class="sports-text style-ref-p-22">It has the required infrastructure to
+                                enhance sports activities including in-door sports facilities, out-door sports
+                                facilities, and various other amenities. The department actively organizes
+                                Inter-departmental sports activities and Annual Sports Day events.</p>
+                            <p class="sports-text">It takes pride in successfully organizing VTU and inter-collegiate
+                                sports activities as per the VTU Sports calendar. State-of-the-art facilities enable the
+                                department to host selection, training, and practice sessions for college teams, as well
+                                as sports events for faculty at college and inter-collegiate levels.</p>
+
+                            <!-- KSCA Recognition -->
+                            <div class="style-ref-div-33">
+                                <p class="style-ref-p-34"><i class="fa-solid fa-trophy style-ref-i-19"></i>KSCA Recognition</p>
+                                <p class="style-ref-p-35">KSCA, Bangalore has recognized and awarded our
+                                    facility with a trophy and certificate as one of the <strong class="style-ref-strong-36">best turf grounds in Karnataka</strong>. The department,
+                                    along with BCCI and KSCA Bangalore, has conducted:</p>
+                            </div>
+
+                            <ul class="sports-list">
+                                <li>Syed Musthaq Ali South States T-20 Tournament — <em>March 2013</em></li>
+                                <li>India 'A' and West Indies 'A' Four Day Test Match — <em>October 2013</em></li>
+                                <li>Ranji Match between Uttar Pradesh and Karnataka — <em>December 2011</em></li>
+                                <li>BCCI Women's Under-15 One Day Trophy 2022–23 — <em>December 2022</em></li>
+                                <li>BCCI Women's Under-15 One Day Trophy 2023–24 — <em>December 2023</em></li>
+                            </ul>
+                            <p class="sports-text">The department has also organized major events such as <strong>VTU's
+                                    16th Athletic Meet (2013–14)</strong>, the <strong>South Zone Inter University
+                                    Cricket (M) Tournament 2019</strong>, and many more Inter-collegiate, Inter-zone,
+                                and Inter-university sports events.</p>
+                        </div>
+
+                        <!-- Vision & Mission -->
+                        <div class="style-ref-div-37">
+                            <!-- Vision -->
+                            <div class="style-ref-div-38">
+                                <div class="style-ref-div-39">
+                                    <div class="style-ref-div-40">
+                                        <i class="fa-solid fa-eye style-ref-i-41"></i>
+                                    </div>
+                                    <h3 class="style-ref-h3-42">Vision</h3>
+                                </div>
+                                <p class="sports-text style-ref-p-43">To run a consistent and sustainable
+                                    Physical Education and Sports development program providing students with
+                                    opportunities to participate in recreational and competitive sporting activities.
+                                </p>
+                            </div>
+
+                            <!-- Mission -->
+                            <div class="style-ref-div-44">
+                                <div class="style-ref-div-39">
+                                    <div class="style-ref-div-45">
+                                        <i class="fa-solid fa-bullseye style-ref-i-46"></i>
+                                    </div>
+                                    <h3 class="style-ref-h3-42">Mission</h3>
+                                </div>
+                                <p class="sports-text style-ref-p-22">Through practice, training, and
+                                    competition, the department strives to instill in each student:</p>
+                                <ul class="sports-list style-ref-li-16">
+                                    <li>Good sportsmanship and personal integrity.</li>
+                                    <li>Loyalty to the group and the ability to function with others as a team.</li>
+                                    <li>Appreciation for hard work, motivation, and perseverance in both winning and
+                                        losing situations.</li>
+                                    <li>Pride in achievements made through fair and honest means.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Infrastructure & Facilities -->
+                        <div class="style-ref-div-47">
+                            <h3 class="sports-heading style-ref-h3-48">Infrastructure
+                                and Facilities</h3>
+                            <div class="style-ref-div-49">
+                                <div>
+                                    <h4 class="sports-subheading style-ref-h4-50">
+                                        Outdoor Facilities</h4>
+                                    <ul class="sports-list style-ref-ul-51">
+                                        <li>Athletics ground with 400 mtr. Track</li>
+                                        <li>International Standard Turf Cricket Ground</li>
+                                        <li>Volleyball & Throw Ball</li>
+                                        <li>Handball & Kho-Kho</li>
+                                        <li>Kabaddi & Football</li>
+                                        <li>Hockey & Ball Badminton</li>
+                                        <li>Basketball</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="sports-subheading style-ref-h4-52">
+                                        Indoor Facilities</h4>
+                                    <ul class="sports-list style-ref-ul-51">
+                                        <li>Table Tennis, Chess & Carom</li>
+                                        <li>Wooden Badminton Court</li>
+                                        <li>Multi Gym Hall</li>
+                                        <li>Power Lifting & Weight Lifting</li>
+                                        <li>Taekwondo</li>
+                                        <li>Wrestling & Judo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ground Sharing Section -->
+                        <div class="style-ref-div-53">
+                            <h3 class="sports-heading"><i class="fa-solid fa-calendar-check style-ref-i-54"></i> Ground Sharing & Reservations</h3>
+                            <p class="sports-text style-ref-p-55">JNNCE Turf cricket ground and Mud
+                                Cricket ground facilities are provided for utilization based on availability and advance
+                                booking, subject to the approval of the Principal of JNNCE.</p>
+
+                            <div class="style-ref-div-56">
+                                <!-- Rules -->
+                                <div>
+                                    <h4 class="sports-subheading">Rules & Regulations</h4>
+                                    <ul class="sports-list style-ref-ul-57">
+                                        <li>Ground once reserved shall not be cancelled or postponed; charges are
+                                            non-refundable.</li>
+                                        <li>Full payment should be made at the time of reservation.</li>
+                                        <li>Usage timings: <strong>9:00 AM to 5:00 PM</strong> only.</li>
+                                        <li>Damage to ground or assets lead to cancellation and appropriate charges.
+                                        </li>
+                                        <li>Fixing banners, flex, or posters is strictly prohibited.</li>
+                                        <li>Garbage, smoking, liquor, or tobacco are strictly prohibited on campus.</li>
+                                        <li>Only concerned persons are entertained in the ground area.</li>
+                                        <li>Campus discipline must be maintained at all times.</li>
+                                        <li>Authority reserves the right of cancellation without assigning reasons.</li>
+                                    </ul>
+                                </div>
+                                <!-- Maintenance Cost -->
+                                <div>
+                                    <h4 class="sports-subheading">Maintenance Cost</h4>
+                                    <div class="modern-table-wrapper">
+                                        <table class="modern-table style-ref-table-58">
+                                            <thead>
+                                                <tr>
+                                                    <th>Service / Facility</th>
+                                                    <th>Charges (Per Day)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Groundsmen Charges</td>
+                                                    <td>Rs. 500.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Turf Cricket Ground Prep</td>
+                                                    <td>Rs. 8,000.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mud Cricket Ground Prep</td>
+                                                    <td>Rs. 4,000.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="style-ref-div-59">
+                                        <h4 class="sports-subheading">Request Form</h4>
+                                        <p class="sports-text style-ref-p-60">Download
+                                            and submit the filled application to the Physical Education Director well in
+                                            advance.</p>
+                                        <a href="#" class="btn btn-primary style-ref-a-61"><i
+                                                class="fa-solid fa-file-pdf"></i> Download Request Form</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact & PED Director Profile -->
+                        <div class="style-ref-div-56">
+                            <!-- Profile Card -->
+                            <div class="sports-profile-card">
+                                <div class="faculty-img style-ref-div-62">
+                                    <img loading="lazy" src="img/sports/Chetan.jpg" alt="Mr. Chethan A.V." decoding="async">
+                                </div>
+                                <div class="faculty-info">
+                                    <h3 class="sports-heading style-ref-h3-63">Chethan A.V.</h3>
+                                    <p class="faculty-designation style-ref-p-64">Physical
+                                        Education Director</p>
+                                    <p class="faculty-qualification">BA., M.P.Ed., KSET (Ph.D)</p>
+                                    <p class="sports-text style-ref-p-65">
+                                        <strong>Experience:</strong> 12 Years
+                                    </p>
+                                    <div class="style-ref-div-66">
+                                        <p class="style-ref-p-67"><i class="fa-solid fa-phone style-ref-i-68"></i> 9844520488 /
+                                            9901293963</p>
+                                        <p class="style-ref-p-69"><i class="fa-solid fa-envelope style-ref-i-68"></i>
+                                            <a class="style-ref-a-70" href="mailto:sports@jnnce.ac.in">sports@jnnce.ac.in</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Contact -->
+                            <div class="style-ref-div-71">
+                                <h3 class="sports-heading style-ref-p-55">Additional Contact</h3>
+                                <div class="style-ref-div-72">
+                                    <div class="style-ref-div-73">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="style-ref-h4-74">Mr. Malthesh</h4>
+                                        <p class="style-ref-p-75">
+                                            Attender, Dept. of Sports</p>
+                                        <p class="style-ref-p-76"><i class="fa-solid fa-phone style-ref-i-19"></i> 98452 99572</p>
+                                    </div>
+                                </div>
+                                <div class="style-ref-div-77">
+                                    <p class="style-ref-p-78"><strong>Note:</strong>
+                                        Filled applications duly signed by the receiving authority should be submitted
+                                        in person to the Physical Education Director well in advance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end #sports-info -->
+
+            <div class="style-ref-div-25" id="janvey-info">
+                <div class="style-ref-div-26">
+                    <h2 class="style-ref-h2-27">JANVEY - Annual Sports & Cultural Fest
+                    </h2>
+                    <div class="style-ref-div-28">
+                    </div>
+                </div>
+
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="janveyToggle">
+                        <h3><i class="fa-solid fa-star"></i> About JANVEY Fest</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+
+                    <div class="sports-collapsible-content" id="janveyContent">
+                        <div class="style-ref-div-31">
+                            <h3 class="style-ref-h3-32">What is
+                                JANVEY?</h3>
+                            <p class="sports-text style-ref-p-55">JANVEY is the premier annual sports
+                                and cultural extravaganza of <strong>Jawaharlal Nehru National College of Engineering
+                                    (JNNCE), Shimoga</strong>. This highly anticipated 3-day celebration brings together
+                                the entire campus community in a vibrant showcase of talent, creativity, and
+                                sportsmanship.</p>
+                            <p class="sports-text">JANVEY serves as a dynamic platform for students across all
+                                departments—CSE, ISE, ECE, ETE, EEE, Mechanical, Civil, MBA, and MCA—to display their
+                                exceptional abilities. The festival is meticulously organized by the college's
+                                <strong>Cultural Crew and Team EKYAM</strong>, fostering campus unity and celebration.
+                            </p>
+                        </div>
+
+                        <!-- Grid for categories -->
+                        <div class="style-ref-div-37">
+                            <!-- Cultural -->
+                            <div class="style-ref-div-79">
+                                <h4 class="sports-subheading"><i class="fa-solid fa-masks-theater style-ref-i-80"></i> Cultural Competitions</h4>
+                                <ul class="sports-list">
+                                    <li><strong>Singing:</strong> Indian & Western solo/group performances</li>
+                                    <li><strong>Dancing:</strong> Classical, contemporary, and freestyle group
+                                        performances</li>
+                                    <li><strong>Pageant:</strong> The prestigious Mr. and Ms. JANVEY competition</li>
+                                </ul>
+                            </div>
+
+                            <!-- Fine Arts -->
+                            <div class="style-ref-div-81">
+                                <h4 class="sports-subheading"><i class="fa-solid fa-palette style-ref-i-80"></i> Fine Arts & Literary</h4>
+                                <ul class="sports-list">
+                                    <li>Pencil sketching and painting</li>
+                                    <li>Rangoli and collage-making</li>
+                                    <li>Photography competitions</li>
+                                    <li>Quizzes and debates</li>
+                                </ul>
+                            </div>
+
+                            <!-- Sports -->
+                            <div class="style-ref-div-79">
+                                <h4 class="sports-subheading"><i class="fa-solid fa-medal style-ref-i-80"></i> Sports Events</h4>
+                                <ul class="sports-list">
+                                    <li><strong>Track & Field:</strong> 100m sprint, high jump, shot put, etc.</li>
+                                    <li><strong>Team Sports:</strong> Various inter-departmental competitions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Highlights -->
+                        <div class="style-ref-div-82">
+                            <h3 class="style-ref-h3-83">
+                                Festival Highlights</h3>
+                            <p class="style-ref-p-84">JANVEY kicks off with an energetic
+                                campus-wide <strong>flashmob</strong> and features spectacular <strong>musical
+                                    nights</strong> showcasing popular Sandalwood playback singers and renowned artists.
+                            </p>
+                            <div class="style-ref-div-85">
+                                <i class="fa-brands fa-instagram style-ref-i-86"></i>
+                                <p class="style-ref-p-87">Follow us on Instagram <a class="style-ref-a-88" rel="noopener noreferrer" href="https://instagram.com/jnnce.janvey" target="_blank">@jnnce.janvey</a> for updates!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Library Section Information -->
+            <div class="style-ref-div-25" id="library-info">
+                <div class="style-ref-div-26">
+                    <h2 class="style-ref-h2-27">JNNCE Library and Information Center</h2>
+                    <div class="style-ref-div-28">
+                    </div>
+                </div>
+
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="libraryToggle">
+                        <h3><i class="fa-solid fa-book"></i> Library Facilities & Statistics</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+
+                    <div class="sports-collapsible-content" id="libraryContent">
+                        <div class="style-ref-div-31">
+                            <h3 class="style-ref-h3-32">Overview
+                            </h3>
+                            <p class="sports-text style-ref-p-22">The JNNCE Library spans an impressive
+                                <strong>1,675.87 Sq.mts</strong> and is a treasure trove of knowledge for Engineering
+                                and Management students. It is fully automated using <strong>e-Lib software</strong>,
+                                allowing web-based access through its dedicated portal: <a class="style-ref-span-30" rel="noopener noreferrer" href="http://libinfo.jnnce.ac.in" target="_blank">libinfo.jnnce.ac.in</a>.
+                            </p>
+
+                            <div class="style-ref-div-89">
+                                <div class="style-ref-div-90">
+                                    <h4 class="style-ref-h4-91"><i class="fa-solid fa-clock style-ref-i-92"></i> Working Hours
+                                    </h4>
+                                    <ul class="sports-list style-ref-ul-93">
+                                        <li><strong>Lending & Newspaper:</strong> 9:30 AM - 5:30 PM</li>
+                                        <li><strong>Reference Section:</strong> 8:00 AM - 8:00 PM</li>
+                                        <li><strong>During Exams:</strong> Open until 9:30 PM</li>
+                                    </ul>
+                                </div>
+                                <div class="style-ref-div-90">
+                                    <h4 class="style-ref-h4-91"><i class="fa-solid fa-hand-holding-hand style-ref-i-92"></i> Borrowing
+                                        Rules</h4>
+                                    <ul class="sports-list style-ref-ul-93">
+                                        <li><strong>Lending Section:</strong> 3 books per student (15 days)</li>
+                                        <li><strong>General Book Bank:</strong> 4 books (entire semester)</li>
+                                        <li><strong>Facilities:</strong> Reprographic & Photostat available</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="style-ref-div-94">
+                            <!-- Books Statistics Table -->
+                            <div class="sports-staff">
+                                <h3 class="sports-heading">Collection Statistics:</h3>
+                                <div class="modern-table-wrapper style-ref-div-95">
+                                    <table class="modern-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sl No</th>
+                                                <th>Subject / Category</th>
+                                                <th>Numbers</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Titles</td>
+                                                <td>15,919</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Total Books (Volumes)</td>
+                                                <td>1,25,695</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Lending Section Books</td>
+                                                <td>70,810</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>General Book Bank Books</td>
+                                                <td>48,857</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Reference Section Books</td>
+                                                <td>6,028</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>SC/ST Books</td>
+                                                <td>3,983</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Digital Library -->
+                            <div class="style-ref-div-96">
+                                <h3 class="style-ref-h3-97"><i class="fa-solid fa-laptop-code style-ref-i-80"></i> Digital &
+                                    Journal Access</h3>
+                                <p class="style-ref-p-98">The library
+                                    maintains <strong>23 National printed journals</strong> and a sophisticated digital
+                                    library for online access.</p>
+                                <div class="style-ref-div-99">
+                                    <p class="style-ref-p-100">E-Resources & Consortia:</p>
+                                    <ul class="sports-list style-ref-ul-101">
+                                        <li>VTU Consortium</li>
+                                        <li>DELNET</li>
+                                        <li>National Digital Library (NDL)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Training and Placement Section Information -->
+            <div class="style-ref-div-25" id="placement-info">
+                <div class="style-ref-div-102">
+                    <h2 class="style-ref-h2-103">
+                        Training & Placement Cell</h2>
+                    <div class="style-ref-div-104">
+                    </div>
+                </div>
+
+                <!-- Infinite Scrolling Company Logo Marquee -->
+                <div class="placement-marquee-section">
+                    <div class="style-ref-div-105">
+                        <h3 class="style-ref-h3-106">Our Recruiters & Industry Partners</h3>
+                    </div>
+                    <div class="placement-marquee-container">
+                        <!-- First Row: Moving Left -->
+                        <div class="marquee-row">
+                            <div class="marquee-inner marquee-inner-left">
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/tata.svg" alt="TCS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>TCS</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-microchip company-card-icon"></i>Mistral Solutions</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-database company-card-icon"></i>MRI Software</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-chart-line company-card-icon"></i>Mu Sigma</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-gears company-card-icon"></i>Prerana Engineering</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/infosys.svg" alt="Infosys" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>Infosys</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/ibm.svg" alt="IBM" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>IBM</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-code company-card-icon"></i>SLK Software</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-desktop company-card-icon"></i>Winman Software</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-heart-pulse company-card-icon"></i>Graphine Health</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-lightbulb company-card-icon"></i>Idea Infinity</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/deloitte.svg" alt="Deloitte" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-briefcase company-card-icon"></i>Deloitte</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-network-wired company-card-icon"></i>ETON Solutions</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/cadence.svg" alt="Cadence" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-microchip company-card-icon"></i>Cadence</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-robot company-card-icon"></i>Robosoft Technologies</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-network-wired company-card-icon"></i>EDS Technologies</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-mobile-screen company-card-icon"></i>LG Soft India</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/hcl.svg" alt="HCL Tech" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>HCL Tech</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-bullhorn company-card-icon"></i>Ginger Media Group</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-eye company-card-icon"></i>IVoyant Systems</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-database company-card-icon"></i>Data Byte</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-brain company-card-icon"></i>1st Principles.ai</span>
+                                </div>
+                                
+                                <!-- Duplicate exactly for seamless wrap -->
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/tata.svg" alt="TCS" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>TCS</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-microchip company-card-icon"></i>Mistral Solutions</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-database company-card-icon"></i>MRI Software</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-chart-line company-card-icon"></i>Mu Sigma</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-gears company-card-icon"></i>Prerana Engineering</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/infosys.svg" alt="Infosys" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>Infosys</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/ibm.svg" alt="IBM" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>IBM</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-code company-card-icon"></i>SLK Software</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-desktop company-card-icon"></i>Winman Software</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-heart-pulse company-card-icon"></i>Graphine Health</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-lightbulb company-card-icon"></i>Idea Infinity</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/deloitte.svg" alt="Deloitte" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-briefcase company-card-icon"></i>Deloitte</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-network-wired company-card-icon"></i>ETON Solutions</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/cadence.svg" alt="Cadence" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-microchip company-card-icon"></i>Cadence</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-robot company-card-icon"></i>Robosoft Technologies</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-network-wired company-card-icon"></i>EDS Technologies</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-mobile-screen company-card-icon"></i>LG Soft India</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/hcl.svg" alt="HCL Tech" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-code company-card-icon"></i>HCL Tech</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-bullhorn company-card-icon"></i>Ginger Media Group</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-eye company-card-icon"></i>IVoyant Systems</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-database company-card-icon"></i>Data Byte</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-brain company-card-icon"></i>1st Principles.ai</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second Row: Moving Right -->
+                        <div class="marquee-row">
+                            <div class="marquee-inner marquee-inner-right">
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-credit-card company-card-icon"></i>Juspay</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/envision.svg" alt="Envision Energy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-leaf company-card-icon"></i>Envision Energy</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-gear company-card-icon"></i>Mekhos</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-bolt company-card-icon"></i>Southern Electronics</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-tower-broadcast company-card-icon"></i>Sasken Technologies</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/tata.svg" alt="Tata Electronics" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-microchip company-card-icon"></i>Tata Electronics</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/bosch.svg" alt="Bosch India" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-industry company-card-icon"></i>Bosch India</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-microchip company-card-icon"></i>Kaynes Technology</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/texasinstruments.svg" alt="Texas Instruments" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-microchip company-card-icon"></i>Texas Instruments</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-industry company-card-icon"></i>Grasim Industries</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-compass-drafting company-card-icon"></i>Ace Designers</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-car-battery company-card-icon"></i>Sogefi Engine Systems</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-cubes company-card-icon"></i>Indo-MIM</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-car company-card-icon"></i>Apex Auto</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-wrench company-card-icon"></i>Delphi TVS</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-wind company-card-icon"></i>Suzlon Energy</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/larsentoubro.svg" alt="L&T" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-building company-card-icon"></i>L&T</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-trowel-bricks company-card-icon"></i>Ramco Cements</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-graduation-cap company-card-icon"></i>K12 Techno Services</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-building company-card-icon"></i>Sobha Limited</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-code-branch company-card-icon"></i>IMR Soft</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-gem company-card-icon"></i>Baldota Group</span>
+                                </div>
+                                
+                                <!-- Duplicate exactly for seamless wrap -->
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-credit-card company-card-icon"></i>Juspay</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/envision.svg" alt="Envision Energy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-leaf company-card-icon"></i>Envision Energy</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-gear company-card-icon"></i>Mekhos</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-bolt company-card-icon"></i>Southern Electronics</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-tower-broadcast company-card-icon"></i>Sasken Technologies</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/tata.svg" alt="Tata Electronics" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-microchip company-card-icon"></i>Tata Electronics</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/bosch.svg" alt="Bosch India" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-industry company-card-icon"></i>Bosch India</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-microchip company-card-icon"></i>Kaynes Technology</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/texasinstruments.svg" alt="Texas Instruments" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-microchip company-card-icon"></i>Texas Instruments</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-industry company-card-icon"></i>Grasim Industries</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-compass-drafting company-card-icon"></i>Ace Designers</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-car-battery company-card-icon"></i>Sogefi Engine Systems</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-cubes company-card-icon"></i>Indo-MIM</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-car company-card-icon"></i>Apex Auto</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-wrench company-card-icon"></i>Delphi TVS</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-wind company-card-icon"></i>Suzlon Energy</span>
+                                </div>
+                                <div class="company-card">
+                                    <img class="company-logo" src="https://cdn.jsdelivr.net/npm/simple-icons@9.22.0/icons/larsentoubro.svg" alt="L&T" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" decoding="async" loading="lazy">
+                                    <span class="company-text style-ref-span-107"><i class="fa-solid fa-building company-card-icon"></i>L&T</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-trowel-bricks company-card-icon"></i>Ramco Cements</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-graduation-cap company-card-icon"></i>K12 Techno Services</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-building company-card-icon"></i>Sobha Limited</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-code-branch company-card-icon"></i>IMR Soft</span>
+                                </div>
+                                <div class="company-card">
+                                    <span class="company-text"><i class="fa-solid fa-gem company-card-icon"></i>Baldota Group</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Overview Block -->
+                <div class="style-ref-div-108">
+                    <p class="style-ref-p-109">
+                        Training & Placement Cell is assisting students to build their career in companies in India and
+                        abroad. The well-structured infrastructure supports selection process like written tests, group
+                        discussions, pre-placement talks and interviews according to the needs of the companies.
+                    </p>
+                </div>
+
+                <!-- Desk Message and Leadership Profiles -->
+                <div class="style-ref-div-110">
+
+                    <!-- Officer Desk Card -->
+                    <div class="style-ref-div-111">
+                        <div>
+                            <h3 class="style-ref-h3-112">
+                                <i class="fa-solid fa-message style-ref-p-64"></i>
+                                From the Placement Officer's Desk
+                            </h3>
+                            <p class="style-ref-p-113">
+                                We, at J.N.N. College of Engineering, Shimoga create opportunities to budding
+                                Engineering and Management graduates. To meet the expectations of ever challenging field
+                                of Engineering and Management, the training and placement Cell ensures each student is
+                                industry ready with strong fundamentals.
+                            </p>
+                            <p class="style-ref-p-113">
+                                The training and placement cell strives to produce engineering and management
+                                professional with ambitious spirit to work in their discipline to achieve the
+                                corporate/recruiter goal as well as individual.
+                            </p>
+                            <p class="style-ref-p-113">
+                                We ensure to produce dynamic environment for our recruiters to shape the new engineering
+                                and management students’ future. We strongly believe in our stakeholders, alumni and
+                                collaborators towards effective engagement in shaping our students career.
+                            </p>
+                            <p class="style-ref-p-114">
+                                I once again welcome you to J.N.N. College of Engineering, Shimoga to join the institute
+                                and brighten your future.
+                            </p>
+                        </div>
+                        <div class="style-ref-div-115">
+                            <img class="style-ref-img-116" loading="lazy" src="img/TrainPlace/Officer.png" alt="Mr. G Suresh Signature Avatar" decoding="async">
+                            <div>
+                                <h4 class="style-ref-h4-117">
+                                    Mr. G Suresh</h4>
+                                <p class="style-ref-p-118">Placement
+                                    Officer, JNNCE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leadership Profile Contact Badges -->
+                    <div class="style-ref-div-119">
+                        <h3 class="style-ref-h3-120">
+                            <i class="fa-solid fa-users-gear style-ref-i-121"></i>
+                            Key Department Contacts
+                        </h3>
+
+                        <!-- Profile 1: Tejasvi Kattimani T R -->
+                        <div class="style-ref-div-122">
+                            <img class="style-ref-img-123" loading="lazy" src="img/TrainPlace/TKTR.jpeg" alt="Tejasvi Kattimani T R" decoding="async">
+                            <div class="style-ref-div-124">
+                                <h4 class="style-ref-h4-125">
+                                    Tejasvi Kattimani T R</h4>
+                                <div class="style-ref-div-126">
+                                    Director – Training & Placement
+                                </div>
+                                <div class="style-ref-div-127">
+                                    <a class="style-ref-a-128" href="mailto:tejasviktr@gmit.ac.in">
+                                        <i class="fa-solid fa-envelope style-ref-i-129"></i>
+                                        <span>tejasviktr@gmit.ac.in</span>
+                                    </a>
+                                    <p class="style-ref-p-130">
+                                        Former Director – CASP, GM University | Former GC Member – GMIT
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile 2: Mr. G Suresh -->
+                        <div class="style-ref-div-131">
+                            <img class="style-ref-img-132" loading="lazy" src="img/TrainPlace/Officer.png" alt="Mr. G Suresh" decoding="async">
+                            <div class="style-ref-div-124">
+                                <h4 class="style-ref-h4-125">
+                                    G. Suresh</h4>
+                                <div class="style-ref-div-133">
+                                    Placement Officer
+                                </div>
+                                <div class="style-ref-div-134">
+                                    <a class="style-ref-a-128" href="mailto:placement@jnnce.ac.in">
+                                        <i class="fa-solid fa-envelope style-ref-i-129"></i>
+                                        <span>placement@jnnce.ac.in</span>
+                                    </a>
+                                    <a class="style-ref-a-135" href="tel:+919844072512">
+                                        <i class="fa-solid fa-mobile-screen-button style-ref-i-136"></i>
+                                        <span>+91-9844072512</span>
+                                    </a>
+                                    <a class="style-ref-a-135" href="tel:08182268806">
+                                        <i class="fa-solid fa-phone style-ref-i-136"></i>
+                                        <span>08182-268806 (O)</span>
+                                    </a>
+                                    <p class="style-ref-p-137">
+                                        JNNCE, Savalanga Road, Navule, Shivamogga-577204
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 1. Collapsible Dropdown: PLACEMENT PROCEDURE -->
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="procToggle">
+                        <h3><i class="fa-solid fa-square-poll-horizontal"></i> Placement Procedure</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="sports-collapsible-content" id="procContent">
+                        <div class="style-ref-div-138">
+                            <h3 class="style-ref-h3-139">
+                                Recruitment & Selection Steps</h3>
+                            <div class="style-ref-div-140">
+                                <div class="style-ref-div-141">
+                                    <div class="style-ref-div-142">
+                                        1</div>
+                                    <p class="style-ref-p-143">Training
+                                        & Placement Cell invites companies to Campus</p>
+                                </div>
+                                <div class="style-ref-div-141">
+                                    <div class="style-ref-div-142">
+                                        2</div>
+                                    <p class="style-ref-p-143">
+                                        Interested companies are requested to send JD (Job Description) to Placement
+                                        cell</p>
+                                </div>
+                                <div class="style-ref-div-141">
+                                    <div class="style-ref-div-142">
+                                        3</div>
+                                    <p class="style-ref-p-143">The
+                                        details of the student's database are made available to the company as per their
+                                        requirements</p>
+                                </div>
+                                <div class="style-ref-div-141">
+                                    <div class="style-ref-div-142">
+                                        4</div>
+                                    <p class="style-ref-p-143">
+                                        Companies are requested to arrange Pre-placement talk for the students of JNNCE
+                                    </p>
+                                </div>
+                                <div class="style-ref-div-141">
+                                    <div class="style-ref-div-142">
+                                        5</div>
+                                    <p class="style-ref-p-143">The
+                                        dates for the company to visit the campus are fixed with mutual convenience</p>
+                                </div>
+                                <div class="style-ref-div-141">
+                                    <div class="style-ref-div-142">
+                                        6</div>
+                                    <p class="style-ref-p-143">Company
+                                        conducts selection process as per their norms</p>
+                                </div>
+                                <div class="style-ref-div-144">
+                                    <div class="style-ref-div-145">
+                                        <i class="fa-solid fa-award"></i></div>
+                                    <p class="style-ref-p-146">
+                                        Issue of Offer Letter to selected students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Collapsible Dropdown: INFRASTRUCTURE AND FACILITIES -->
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="infraToggle">
+                        <h3><i class="fa-solid fa-building-circle-check"></i> Infrastructure and Facilities</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="sports-collapsible-content" id="infraContent">
+                        <div class="style-ref-div-147">
+                            <h3 class="style-ref-h3-148">
+                                Modern T&P Setup</h3>
+                            <p class="style-ref-p-149">JNNCE has
+                                the following infrastructure facilities to conduct training programs and campus
+                                recruitment drives:</p>
+
+                            <div class="style-ref-div-49">
+                                <div class="style-ref-div-150">
+                                    <h4 class="style-ref-h4-151">
+                                        <i class="fa-solid fa-chalkboard-user style-ref-p-64"></i> Seminar Halls / Auditorium</h4>
+                                    <p class="style-ref-p-152">Spacious
+                                        Seminar Hall to conduct Training & Placement activities and also modern
+                                        auditorium for Pre-Placement Presentations by the Corporates.</p>
+                                </div>
+                                <div class="style-ref-div-150">
+                                    <h4 class="style-ref-h4-151">
+                                        <i class="fa-solid fa-comments style-ref-p-64"></i>
+                                        Discussion / Interview Cabins</h4>
+                                    <p class="style-ref-p-152">These
+                                        cabins are equipped with internet facilities. Corporates can conduct group
+                                        discussions, face to face technical & HR interviews in these rooms.</p>
+                                </div>
+                                <div class="style-ref-div-150">
+                                    <h4 class="style-ref-h4-151">
+                                        <i class="fa-solid fa-desktop style-ref-p-64"></i>
+                                        Executive Training Center</h4>
+                                    <p class="style-ref-p-152">Has the
+                                        capacity to accommodate 50 students with cluster seating, LCD, Computer with
+                                        internet, Plug-in for internet connection, etc., for the Hands-on technical
+                                        training for the students and faculties.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Collapsible Dropdown: CELL ACTIVITIES -->
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="actsToggle">
+                        <h3><i class="fa-solid fa-list-check"></i> Activities of Training and Placement Cell</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="sports-collapsible-content" id="actsContent">
+                        <div class="style-ref-div-138">
+                            <h3 class="style-ref-h3-139">
+                                Year-Round Career Initiatives</h3>
+                            <ul class="sports-list style-ref-ul-153">
+                                <li><strong>Aptitude, Technical aptitude, Communication Skills, Interview Skills, Group
+                                        Discussion etc.</strong></li>
+                                <li>Continuous Training through SoftSkill lab Phase-wise training from First year to
+                                    final year.</li>
+                                <li>Technical Training for second and third year students.</li>
+                                <li>Training program for pre-final & final year students on General.</li>
+                                <li>Organizing introductory seminar relating to Higher Education in India and abroad and
+                                    also on competitive examinations.</li>
+                                <li>Arranging Campus Interviews in the college to place the maximum no. of students.
+                                </li>
+                                <li>Conducting Mock Tests, Mock Interviews.</li>
+                                <li>Invite Top-notch IT Companies & Core Industries to recruit our talented students to
+                                    fulfill their career dreams.</li>
+                                <li>Career guidance and career planning by counselling.</li>
+                                <li>Organizing special lectures by distinguished speakers from Industry.</li>
+                                <li>Organizing passport Mela for facilitating students to obtain passport.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Collapsible Dropdown: TRAINING -->
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="trainToggle">
+                        <h3><i class="fa-solid fa-graduation-cap"></i> Training Programs</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="sports-collapsible-content" id="trainContent">
+                        <div class="style-ref-div-147">
+
+                            <div class="style-ref-div-154">
+                                <h4 class="style-ref-h4-155">
+                                    <i class="fa-solid fa-brain style-ref-i-156"></i> Aptitude
+                                    Development Program:</h4>
+                                <p class="style-ref-p-157">
+                                    Aptitude development is critical at Graduation and Post Graduation level in today’s
+                                    environment. Corporates and recruiters evaluate prospective candidates based on
+                                    their aptitude i.e., quantitative, reasoning, verbal ability, data interpretation
+                                    and problem solving areas. JNNCE provides training on Aptitude to students in their
+                                    pre-final year. Trainers are selected based on their experience in teaching
+                                    students.
+                                </p>
+                            </div>
+
+                            <div class="style-ref-div-154">
+                                <h4 class="style-ref-h4-155">
+                                    <i class="fa-solid fa-user-gear style-ref-i-156"></i> Personality
+                                    Development/Attitude & Behavioural Development Program:</h4>
+                                <p class="style-ref-p-157">
+                                    JNNCE emphasizes shaping the personality of each and every student studying at JNNCE
+                                    to suit their career aspirations. Training programs are conducted for students who
+                                    wish to pursue higher studies, recruitments, and entrepreneurship areas.
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="style-ref-h4-155">
+                                    <i class="fa-solid fa-gears style-ref-i-156"></i> Technical/Domain
+                                    Skills Training:</h4>
+                                <p class="style-ref-p-157">
+                                    Based on the inputs from the advisory Board and Placement Committee, the Training &
+                                    Placement Cell organizes technical hands-on training in latest technologies to meet
+                                    the requirements of the industries.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Collapsible Dropdown: INTERNSHIP -->
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="internToggle">
+                        <h3><i class="fa-solid fa-laptop-file"></i> Internship Program</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="sports-collapsible-content" id="internContent">
+                        <div class="style-ref-div-138">
+                            <h3 class="style-ref-h3-158">
+                                Real-World Industry Exposure</h3>
+                            <p class="style-ref-p-159">
+                                Training & Placement Cell assists students in getting internships in corporate sectors
+                                and industries. It provides necessary resources, databases, and takes corporate
+                                initiative to conduct internship selection drives in the campus.
+                            </p>
+                            <h4 class="style-ref-h4-160">
+                                Key Benefits of Internships:</h4>
+                            <ul class="sports-list style-ref-ul-153">
+                                <li>It helps candidates to understand the practical implementation of the concepts
+                                    learnt in classroom.</li>
+                                <li>Increases the technical knowledge of the students.</li>
+                                <li>It increases the chances of getting jobs in the market.</li>
+                                <li>Internship helps the students to gain valuable industrial exposure.</li>
+                                <li>It increases the overall Employability Skills of the students.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Society Section Information -->
+            <div class="style-ref-div-25" id="society-info">
+                <div class="style-ref-div-26">
+                    <h2 class="style-ref-h2-27">JNNCE Staff & Students Co-operative
+                        Society
+                    </h2>
+                    <div class="style-ref-div-28">
+                    </div>
+                </div>
+
+                <div class="sports-dropdown-container">
+                    <div class="sports-toggle-header" id="societyToggle">
+                        <h3><i class="fa-solid fa-users-gear"></i> Society Details & Office Bearers</h3>
+                        <div class="sports-toggle-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+
+                    <div class="sports-collapsible-content" id="societyContent">
+                        <div class="style-ref-div-31">
+                            <h3 class="style-ref-h3-32">About the
+                                Society</h3>
+                            <p class="sports-text style-ref-p-22">JNNCE Staff & Students Co-operative
+                                Society caters to the needs of students and staff for stationery, blue books, assignment
+                                books, practical records, syllabus copies, and daily consumables needed for hostel
+                                students.</p>
+                            <p class="sports-text style-ref-p-22">Additionally, it supplies all the
+                                stationery required by the college, including printer cartridges. All students are
+                                co-opted members, and several staff members are part of the society.</p>
+
+                            <div class="style-ref-div-161">
+                                <h4 class="style-ref-h4-91"><i class="fa-solid fa-clock style-ref-i-92"></i> Society Working
+                                    Hours</h4>
+                                <ul class="sports-list style-ref-li-16">
+                                    <li><strong>Morning Session:</strong> 10:00 AM to 01:30 PM</li>
+                                    <li><strong>Afternoon Session:</strong> 03:00 PM to 05:30 PM</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="sports-staff style-ref-div-162">
+                            <h3 class="sports-heading">Office Bearers:</h3>
+                            <div class="modern-table-wrapper style-ref-div-95">
+                                <table class="modern-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Sl No</th>
+                                            <th>Name</th>
+                                            <th>Dept</th>
+                                            <th>Position</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Dr. Y Vijaya Kumar</td>
+                                            <td>Principal</td>
+                                            <td>President</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Dr. Moinuddin Khan M H</td>
+                                            <td>HoD, Chemistry</td>
+                                            <td>Vice President</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dr. S V Sathyanarayana</td>
+                                            <td>Professor, ECE</td>
+                                            <td>Director</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Mr. Vedanand</td>
+                                            <td>Asst. Professor, CSE</td>
+                                            <td>Director</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Mr. S B Harish</td>
+                                            <td>Asst. Prof, TCE</td>
+                                            <td>Director</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Mrs. Hemalatha N S</td>
+                                            <td>FDA EST</td>
+                                            <td>Director</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Mr. Gopinath S</td>
+                                            <td>Asst. Instructor, Mech</td>
+                                            <td>Director</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Mr. Chandran R E</td>
+                                            <td>Attender, MBA</td>
+                                            <td>Director</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Mr. Mohsin Khan</td>
+                                            <td>JNNCESSCS</td>
+                                            <td>Secretary</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hostel Section Information -->
+            <div class="style-ref-div-25" id="hostel-info">
+                <div class="style-ref-div-26">
+                    <h2 class="style-ref-h2-27">Hostel Facilities</h2>
+                    <div class="style-ref-div-28">
+                    </div>
+                </div>
+
+                <div class="hostel-details-container">
+                    <!-- Highlights -->
+                    <div class="style-ref-div-163">
+                        <h3 class="style-ref-h3-164"><i class="fa-solid fa-star style-ref-i-165"></i>
+                            Key Highlights</h3>
+                        <ul class="sports-list">
+                            <li><strong>Boys’ Hostels:</strong> Four hostels located within the campus with a total
+                                capacity of <strong>580</strong> students.</li>
+                            <li><strong>“Annapurna” Mess:</strong> Spacious and hygienic boarding facility for all
+                                residents.</li>
+                            <li><strong>Girls’ Hostels:</strong> Two hostels located off-campus with a total capacity of
+                                <strong>450</strong> students.
+                            </li>
+                            <li><strong>Girls’ Hostel Amenities:</strong> Equipped with a reference library, internet
+                                facility, and dedicated bus facility.</li>
+                            <li><strong>Guest Rooms:</strong> Available for parents and visitors on payment (subject to
+                                availability).</li>
+                            <li><strong>General Facilities:</strong> TV, 24/7 Security, GYM / Sports facilities, and
+                                Transport.</li>
+                            <li><strong>Mediclaim:</strong> Benefit for students up to <strong>Rs. 50,000/-</strong> on
+                                hospitalization.</li>
+                        </ul>
+                    </div>
+
+                    <div class="style-ref-div-166">
+                        <!-- Wardens & Contacts -->
+                        <div class="style-ref-div-79">
+                            <h3 class="style-ref-h3-167"><i class="fa-solid fa-user-tie style-ref-i-80"></i> Hostel Wardens</h3>
+                            <div class="style-ref-p-55">
+                                <p class="style-ref-p-168">Mr.
+                                    Shanthi Kiran M.</p>
+                                <p class="style-ref-p-169">Asst. Prof. Dept. of Mechanical Engg. (Boys
+                                    Hostel)</p>
+                            </div>
+                            <div class="style-ref-p-22">
+                                <p class="style-ref-p-168">Smt.
+                                    Anuradha C.K.</p>
+                                <p class="style-ref-p-169">Asst Prof., M.B.A. Dept. (Girls Hostel)</p>
+                            </div>
+
+                            <h4 class="style-ref-h4-170">
+                                Hostel Staff Directory</h4>
+                            <div class="modern-table-wrapper style-ref-div-7">
+                                <table class="modern-table style-ref-table-171">
+                                    <thead>
+                                        <tr class="style-ref-tr-172">
+                                            <th class="style-ref-th-173">Staff Name</th>
+                                            <th class="style-ref-th-173">Designation</th>
+                                            <th class="style-ref-th-173">Contact</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="style-ref-th-173"><strong>Sathish M</strong></td>
+                                            <td class="style-ref-th-173">Resident Warden (Boys)</td>
+                                            <td class="style-ref-th-173"><a class="style-ref-i-121" href="tel:9479374177">9479374177</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style-ref-th-173"><strong>Varalakshmi D</strong></td>
+                                            <td class="style-ref-th-173">Matron Ladies Hostel</td>
+                                            <td class="style-ref-th-173"><a class="style-ref-i-121" href="tel:8618728312">8618728312</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style-ref-th-173"><strong>Rudresha H P</strong></td>
+                                            <td class="style-ref-th-173">Attender</td>
+                                            <td class="style-ref-th-173">9663835367</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style-ref-th-173"><strong>Suresha N</strong></td>
+                                            <td class="style-ref-th-173">Maintenance</td>
+                                            <td class="style-ref-th-173">9739604158</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="style-ref-th-173"><strong>Ranganatha</strong></td>
+                                            <td class="style-ref-th-173">Room boy (Krishna)</td>
+                                            <td class="style-ref-th-173">7411278109</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="style-ref-p-174">Note:
+                                Full staff list available at the hostel office.</p>
+                        </div>
+
+                        <!-- Mess Timings -->
+                        <div class="style-ref-div-81">
+                            <h3 class="style-ref-h3-167"><i class="fa-solid fa-clock style-ref-i-175"></i> MESS Timings</h3>
+                            <div class="modern-table-wrapper">
+                                <table class="modern-table style-ref-p-69">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fa-solid fa-mug-saucer style-ref-i-176"></i> <strong>Breakfast</strong>
+                                            </td>
+                                            <td>7:30 AM to 9:00 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa-solid fa-utensils style-ref-i-177"></i> <strong>Lunch</strong>
+                                            </td>
+                                            <td>12:30 PM to 2:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa-solid fa-bowl-food style-ref-i-178"></i> <strong>Dinner</strong>
+                                            </td>
+                                            <td>7:30 PM to 9:00 PM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="style-ref-div-179">
+                                <p class="style-ref-p-180">
+                                    <strong>Note:</strong> Lunch is available between 12:30 PM to 2:00 PM on payment for
+                                    day scholars and staff.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Important Information -->
+                    <div class="style-ref-div-181">
+                        <h3 class="style-ref-h3-182"><i class="fa-solid fa-circle-exclamation style-ref-i-80"></i> Important
+                            Information for Students</h3>
+                        <p class="style-ref-p-183">Students are strictly informed to note and
+                            follow the hostel gate timings:</p>
+                        <div class="style-ref-div-184">
+                            <div class="style-ref-div-185">
+                                <p class="style-ref-p-186">Boys Hostel Gate</p>
+                                <p class="style-ref-p-187">Closed: 9:00 PM – 6:00 AM</p>
+                            </div>
+                            <div class="style-ref-div-185">
+                                <p class="style-ref-p-186">Girls Hostel Gate</p>
+                                <p class="style-ref-p-187">Closed: 8:00 PM – 6:00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rules and Regulations -->
+                    <div class="style-ref-div-188">
+                        <h3 class="style-ref-h3-189"><i class="fa-solid fa-gavel style-ref-i-80"></i> Rules & Regulations</h3>
+                        <div class="style-ref-div-56">
+                            <div>
+                                <h4 class="style-ref-h4-190">
+                                    General Conduct</h4>
+                                <ul class="sports-list style-ref-ul-191">
+                                    <li><strong>Prohibited Substances:</strong> Smoking, consumption of alcohol,
+                                        tobacco, gutka, and other intoxicants are strictly prohibited.</li>
+                                    <li><strong>Property Care:</strong> Students must not cause any damage to hostel
+                                        furniture, equipment, or property.</li>
+                                    <li><strong>Explosives:</strong> Lighting crackers or using any explosives in or
+                                        around the hostel is forbidden.</li>
+                                    <li><strong>Vehicle Policy:</strong> Residents are not permitted to keep
+                                        two-wheelers or four-wheelers in the hostel.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="style-ref-h4-190">
+                                    Safety & Security</h4>
+                                <ul class="sports-list style-ref-ul-191">
+                                    <li><strong>Unauthorized Entry:</strong> Bringing outsiders, day scholars, or locals
+                                        into the hostel is strictly prohibited.</li>
+                                    <li><strong>Penalty:</strong> A fine of <strong>Rs. 1000/-</strong> will be imposed
+                                        for bringing unauthorized persons inside.</li>
+                                    <li><strong>Gatherings:</strong> Group gatherings inside or outside the hostel
+                                        premises are not allowed.</li>
+                                    <li><strong>Outside Food:</strong> Bringing outside food or snacks into the hostel
+                                        mess/premises is not permitted.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="style-ref-h4-190">
+                                    Staff & Management</h4>
+                                <ul class="sports-list style-ref-ul-191">
+                                    <li><strong>Cleanliness:</strong> Mess staff must maintain the highest standards of
+                                        hygiene and cleanliness.</li>
+                                    <li><strong>Professionalism:</strong> Staff must behave politely with students,
+                                        parents, and visitors at all times.</li>
+                                    <li><strong>Property Protection:</strong> All staff members are responsible for the
+                                        protection and maintenance of hostel assets.</li>
+                                    <li><strong>Duty Integrity:</strong> Staff must be punctual and remain dedicated to
+                                        their duties during working hours.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="style-ref-div-192">
+                            <p class="style-ref-p-193">
+                                <i class="fa-solid fa-bullhorn"></i> <strong>Note:</strong> Any issues or grievances
+                                must be reported immediately to the <strong>Resident Warden</strong> for prompt action.
+                            </p>
+                        </div>
+                    </div> <!-- closing Rules and Regulations -->
+                </div> <!-- closing hostel-details-container -->
+            </div> <!-- closing hostel-info -->
+
+            <!-- Transportation Section Information -->
+            <div class="style-ref-div-25" id="transportation-info">
+                <!-- Header with better alignment -->
+                <div class="style-ref-div-194">
+                    <h2 class="style-ref-h2-195">
+                        Transportation Department</h2>
+                    <div class="style-ref-div-196">
+                    </div>
+                    <p class="style-ref-p-197">
+                        Providing safe and efficient shuttle services with a fleet of 35 dedicated buses for students
+                        and staff.</p>
+                </div>
+
+                <div class="style-ref-div-198">
+                    <!-- Leadership -->
+                    <div class="style-ref-div-199">
+                        <h3 class="style-ref-h3-200">
+                            <i class="fa-solid fa-user-shield style-ref-i-201"></i> Dept. Leadership
+                        </h3>
+                        <div class="modern-table-wrapper">
+                            <table class="modern-table style-ref-p-69">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Chairman</strong></td>
+                                        <td>Rabindan J.<br><small class="style-ref-small-202">Asst Prof., Dept. of Civil
+                                                Engg.</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Supervisor</strong></td>
+                                        <td>Praveen Kumar<br><a class="style-ref-span-30" href="tel:7019906292">7019906292</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Maintenance</strong></td>
+                                        <td>Neelakanta M E<br><a class="style-ref-span-30" href="tel:9243992119">92439 92119</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Timings -->
+                    <div class="style-ref-div-203">
+                        <h3 class="style-ref-h3-200">
+                            <i class="fa-solid fa-clock-rotate-left style-ref-i-204"></i> Bus Timings
+                        </h3>
+                        <div class="modern-table-wrapper">
+                            <table class="modern-table style-ref-table-205">
+                                <thead>
+                                    <tr>
+                                        <th>Bhadravathi</th>
+                                        <th>Shivamogga</th>
+                                        <th>Class Starting Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>07:15 AM</td>
+                                        <td>07:45 AM</td>
+                                        <td>08:25 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09:10 AM</td>
+                                        <td>10:00 AM</td>
+                                        <td>10:45 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>02:05 PM</td>
+                                        <td>02:30 PM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="style-ref-p-206">
+                            * Timings from first pick up point.</p>
+                    </div>
+                </div>
+
+                <!-- Return Timings Note -->
+                <div class="style-ref-div-207">
+                    <div class="style-ref-div-208"><i class="fa-solid fa-bus-simple"></i>
+                    </div>
+                    <div>
+                        <h4 class="style-ref-h4-209">
+                            Departure from JNNCE Campus (Return)</h4>
+                        <p class="style-ref-p-210">
+                            <strong>Shivamogga:</strong> 12:45 PM, 01:45 PM, 05:30 PM (Mon-Fri) <br>
+                            <strong>Bhadravathi:</strong> 01:45 PM, 05:30 PM (Mon-Fri)
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pickup Points -->
+                <div class="style-ref-div-211">
+                    <div class="style-ref-div-212">
+                        <h3 class="style-ref-h3-213">
+                            <i class="fa-solid fa-map-location-dot style-ref-i-214"></i> Pick Up Points are as
+                            below
+                        </h3>
+                    </div>
+
+                    <div class="style-ref-div-215">
+                        <!-- Route 1 -->
+                        <div class="route-card style-ref-div-216">
+                            <h4 class="style-ref-h4-217">
+                                Sahyadri College to JNNCE</h4>
+                            <p class="style-ref-p-218">Sahyadri College, Sandal
+                                Colony, Mahadevi Theatre, Shankar Mutt, Sheshadripuram, Mahaveera Circle, Kamala Nursing
+                                Home, Parvathi Nursing Home, Ashwathnagar, College.</p>
+                        </div>
+                        <!-- Route 2 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Marigaddige to JNNCE</h4>
+                            <p class="style-ref-p-218">Marigaddige, Kote Police
+                                Station, Krishna Cafe, Amer Amhed Circle, Gopi Circle, Shivamogga Optical Circle, Jail
+                                Circle, Z.P. Office, Kamala Nursing Home, Parvathi Nursing Home, Navule, College.</p>
+                        </div>
+                        <!-- Route 3 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Gopala Gowda Extension to JNNCE</h4>
+                            <p class="style-ref-p-218">Mahindra Show Room, Good Luck
+                                Circle, I.T. Office, More Circle, Sagar Road Cross, Katte Subbanna Kalyana Mantapa
+                                Cross, Damodara Colony Cross, APMC Road, 60 ft. Road Cross, DVS, I Auto Stand, Laxmi
+                                Talkies, Nirmala Nursing Home, Gandhi Nagar, Parvathi Nursing Home, Ashwathnagar,
+                                Navule, College.</p>
+                        </div>
+                        <!-- Route 4 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Tempo Stand to JNNCE</h4>
+                            <p class="style-ref-p-218">Kamath Petrol Bunk, Tempo
+                                Stand, Bus Stand, Mc.Gann Gate, Circuit House Circle, Sharavathi Nagar, 60ft. Road,
+                                Vinobanagar 1st Auto Stand, Laxmi Theater, Gandhi Nagar, Parvathi Nursing Home, Navule,
+                                College.</p>
+                        </div>
+                        <!-- Route 5 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Gopala to JNNCE</h4>
+                            <p class="style-ref-p-218">Gopi Shetty Koppa Cross, City
+                                Bus stop, Double Road Cross, Vijaya Nagara, Droupadamma Circle, Circuit House Circle,
+                                Doctors Quarters, Jail Circle, Z.P. Office, Kamala Nursing Home, Parvathi Nursing Home,
+                                Navule, College.</p>
+                        </div>
+                        <!-- Route 6 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Ragigudda Circle to JNNCE</h4>
+                            <p class="style-ref-p-218">Ragigudda Circle, Nexa Service
+                                Station Cross, Sangolli Rayanna Circle, K.E.B Circle, Tank Mohalla, Mahaveer Circle,
+                                Shivamurthy Circle, Kamala Nursing Home, Parvathi Nursing Home, Ashwath Nagar, Navule,
+                                Ganapathi Temple, College.</p>
+                        </div>
+                        <!-- Route 7 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Sahyadri Colony to JNNCE</h4>
+                            <p class="style-ref-p-218">Sahyadri Colony, Devraj Urs
+                                Badavane, P&T Colony Cross, Kashi Pura Cross, Kashipura Arch, Professor Park, Kariyanna
+                                Building, Savi Bakery, Police Chowkey, DVS, 1st Auto Stand, Bommanakatte Railway Gate,
+                                LBS Nagar, JNNCE.</p>
+                        </div>
+                        <!-- Route 8 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Karnataka Sangha to JNNCE</h4>
+                            <p class="style-ref-p-218">Karnataka Sangha, S.N. Market,
+                                Gopicircle, J.P.N. Road, Ganapathi Temple, Jyothi Garden, Jail Circle, Z.P. Office,
+                                Kamala Nursing Home, Parvathi Nursing Home, Ashwath Nagara, Navule, College.</p>
+                        </div>
+                        <!-- Route 9 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Bommanakatte to JNNCE <small>(8:25 AM Only)</small></h4>
+                            <p class="style-ref-p-218">Navule, Govt. Boys Hostel,
+                                Bommanakatte Last Bus Stop, Kirti Nagar, College.</p>
+                        </div>
+                        <!-- Route 10 -->
+                        <div class="route-card style-ref-div-219">
+                            <h4 class="style-ref-h4-217">
+                                Shakthi Dhama Gate to JNNCE</h4>
+                            <p class="style-ref-p-218">Shakthi Dhama Entrance Gate,
+                                BCM Hostel, Gadikoppa Bus Stop, Mahindra Show Room, Alkola Circle, Katte Subbanna
+                                Kalyana Mantapa Cross, Damodara Colony Cross, APMC Road, 60 ft. Road Cross, I Auto
+                                Stand, Laxmi Talkies, Nirmala Nursing Home, Gandhi Nagar, Parvathi Nursing Home,
+                                Ashwathnagara, Navule, College.</p>
+                        </div>
+                        <!-- Route 11 -->
+                        <div class="route-card style-ref-div-220">
+                            <h4 class="style-ref-h4-221">
+                                Bhadravathi to JNNCE</h4>
+                            <p class="style-ref-p-222">Siddapura (Bypass),
+                                Military Camp Circle, Ujjanipura, MPM Hospital, MPM Circle, Sir. M.V. College, VISL
+                                Hospital, Jayashree Circle, Bachelors Quarters, Bus Stand, Siddharudanagar, Urdu School,
+                                Rangappa Circle, Madhavachar Circle, Market, Hutha Colony and College.</p>
+                        </div>
+                        <!-- Special Route -->
+                        <div class="route-card style-ref-div-223">
+                            <h4 class="style-ref-h4-224">
+                                <i class="fa-solid fa-venus"></i> Only for Girls
+                            </h4>
+                            <p class="style-ref-p-225">Girls Hostel, Navule,
+                                College.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footnote -->
+                    <div class="style-ref-div-226">
+                        <p class="style-ref-p-227">
+                            <i class="fa-solid fa-circle-info style-ref-i-19"></i>
+                            <strong>Note:</strong> Students are requested to be present <strong>5 minutes early</strong>
+                            at their respective stops. Board only buses with names <strong>JNNCE, NPS, or NES</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- closing transportation-info -->
+
+            <div class="facilities-page-grid style-ref-div-59" id="facilities-detail-grid">
+                <!-- Images will be loaded here dynamically -->
+            </div>
+        </div><!-- end .container -->
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="style-ref-div-228">
+            <img loading="lazy" src="data:," alt="Lightbox Image" class="lightbox-img" id="lightbox-img" decoding="async">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer Top: Info Cards -->
+            <div class="footer-top-info">
+                <a href="contact.html#map" class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-content">
+                        <h4>Address</h4>
+                        <p>JNNCE, Savlanga Rd, Navule, Shivamogga, Karnataka 577204</p>
+                    </div>
+                </a>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-content">
+                        <h4>Quick Contact</h4>
+                        <p>08182 - 225341 / 222450<br><small>Principal / Fax</small></p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-content">
+                        <h4>Email address</h4>
+                        <p><a href="mailto:principal@jnnce.ac.in"
+                                class="footer-hover-link">principal@jnnce.ac.in</a><br>
+                            <a href="mailto:info@jnnce.ac.in" class="footer-hover-link">info@jnnce.ac.in</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo-group">
+                        <img src="img/clglogo.png" alt="JNNCE Logo" class="footer-clg-logo" decoding="async" loading="lazy">
+                        <div class="logo-text">
+                            <span>JNNCE Shivamogga</span>
+                            <small>Master of Computer Applications</small>
+                        </div>
+                    </div>
+                    <p>The history of JNN College of Engineering is marked by events that have made it synonymous with
+                        quality education. Established in 1980 by NES, the College is affiliated to VTU, Belagavi.</p>
+                    <div class="social-links">
+                        <a rel="noopener noreferrer" href="https://www.linkedin.com/company/jnnce-mca/" target="_blank" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a rel="noopener noreferrer" href="https://www.instagram.com/jnnce.janvey?igsh=MXB0bzllZnY5bzhrNw==" target="_blank"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-external">
+                    <h4>External Links</h4>
+                    <ul class="external-links-list">
+                        <li><a rel="noopener noreferrer" href="https://jnnce.ac.in/jnndemo/" target="_blank">jnnce.ac.in</a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.aicte-india.org/" target="_blank">AICTE - India</a></li>
+                        <li><a rel="noopener noreferrer" href="http://www.naac.gov.in/" target="_blank">NAAC Accreditation</a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.nes-shimoga.org/" target="_blank">National Education Society</a></li>
+                        <li><a rel="noopener noreferrer" href="https://vtu.ac.in/" target="_blank">Visvesvaraya Technological University</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-grid">
+                    <p>&copy; 2026 JNNCE Master of Computer Applications. All Rights Reserved.</p>
+                    <ul class="bottom-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="departments.html">About Us</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Toggle Button (top-left) -->
+    <button id="musicToggleBtn" data-tooltip="Play Music" aria-label="Toggle background music">
+        <i class="fa-solid fa-music music-icon"></i>
+    </button>
+
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+  <script src="js/premium-ui.js"></script>
+    <script src="facilities-data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+
+            if (!category) {
+                window.location.href = 'facilities.html';
+                return;
+            }
+
+            try {
+                if (typeof facilitiesData === 'undefined') {
+                    throw new Error("Facilities data not found. Please ensure facilities-data.js is loaded.");
+                }
+                const data = facilitiesData;
+
+                const categoryData = data[category];
+                if (!categoryData) {
+                    window.location.href = 'facilities.html';
+                    return;
+                }
+
+                document.getElementById('facilities-title').innerText = categoryData.title;
+                document.getElementById('facilities-desc').innerText = categoryData.description;
+                document.title = `${categoryData.title} | Facilities | JNNCE Master of Computer Applications`;
+
+                const grid = document.getElementById('facilities-detail-grid');
+
+                // Ensure the grid is always outside #sports-info (fix for nesting bug)
+                const container = document.querySelector('.section .container');
+                if (grid && container && !container.contains(grid) || (grid && grid.closest('#sports-info'))) {
+                    container.appendChild(grid);
+                }
+                grid.style.display = 'grid';
+                categoryData.images.forEach(img => {
+                    const item = document.createElement('div');
+                    item.className = 'facilities-item';
+                    item.innerHTML = `
+                        <img loading="lazy" src="${img.url}" alt="${img.caption || categoryData.title}" decoding="async">
+                        <div class="facilities-overlay">
+                            <span>${img.caption}</span>
+                        </div>
+                    `;
+                    grid.appendChild(item);
+                });
+
+                // Show sports info if category is stadium
+                if (category === 'stadium') {
+                    const sportsInfo = document.getElementById('sports-info');
+                    if (sportsInfo) {
+                        sportsInfo.style.display = 'block';
+                    }
+
+                    // Setup toggle functionality
+                    const sportsToggle = document.getElementById('sportsToggle');
+                    const sportsContent = document.getElementById('sportsContent');
+
+                    if (sportsToggle && sportsContent) {
+                        sportsToggle.addEventListener('click', function () {
+                            this.classList.toggle('active');
+                            sportsContent.classList.toggle('expanded');
+
+                            // Smooth scroll to top of info if expanding
+                            if (this.classList.contains('active')) {
+                                setTimeout(() => {
+                                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 300);
+                            }
+                        });
+                    }
+                }
+
+                // Show Janvey info if category is campus-life
+                if (category === 'campus-life') {
+                    const janveyInfo = document.getElementById('janvey-info');
+                    if (janveyInfo) {
+                        janveyInfo.style.display = 'block';
+                    }
+
+                    // Setup toggle functionality
+                    const janveyToggle = document.getElementById('janveyToggle');
+                    const janveyContent = document.getElementById('janveyContent');
+
+                    if (janveyToggle && janveyContent) {
+                        janveyToggle.addEventListener('click', function () {
+                            this.classList.toggle('active');
+                            janveyContent.classList.toggle('expanded');
+
+                            // Smooth scroll to top of info if expanding
+                            if (this.classList.contains('active')) {
+                                setTimeout(() => {
+                                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 300);
+                            }
+                        });
+                    }
+                }
+
+                // Show Library info if category is library
+                if (category === 'library') {
+                    const libraryInfo = document.getElementById('library-info');
+                    if (libraryInfo) {
+                        libraryInfo.style.display = 'block';
+                    }
+
+                    // Setup toggle functionality
+                    const libraryToggle = document.getElementById('libraryToggle');
+                    const libraryContent = document.getElementById('libraryContent');
+
+                    if (libraryToggle && libraryContent) {
+                        libraryToggle.addEventListener('click', function () {
+                            this.classList.toggle('active');
+                            libraryContent.classList.toggle('expanded');
+
+                            // Smooth scroll to top of info if expanding
+                            if (this.classList.contains('active')) {
+                                setTimeout(() => {
+                                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 300);
+                            }
+                        });
+                    }
+                }
+
+                // Show Placement info if category is placement
+                if (category === 'placement') {
+                    const placementInfo = document.getElementById('placement-info');
+                    if (placementInfo) {
+                        placementInfo.style.display = 'block';
+                    }
+
+                    // Setup toggle functionality for multiple accordions in placement section
+                    const placementToggles = [
+                        { btn: 'procToggle', content: 'procContent' },
+                        { btn: 'infraToggle', content: 'infraContent' },
+                        { btn: 'actsToggle', content: 'actsContent' },
+                        { btn: 'trainToggle', content: 'trainContent' },
+                        { btn: 'internToggle', content: 'internContent' }
+                    ];
+
+                    placementToggles.forEach(t => {
+                        const toggleBtn = document.getElementById(t.btn);
+                        const toggleContent = document.getElementById(t.content);
+
+                        if (toggleBtn && toggleContent) {
+                            toggleBtn.addEventListener('click', function () {
+                                this.classList.toggle('active');
+                                toggleContent.classList.toggle('expanded');
+
+                                // Smooth scroll to top of info if expanding
+                                if (this.classList.contains('active')) {
+                                    setTimeout(() => {
+                                        this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                    }, 300);
+                                }
+                            });
+                        }
+                    });
+                }
+
+                // Show Society info if category is cooperative-society
+                if (category === 'cooperative-society') {
+                    const societyInfo = document.getElementById('society-info');
+                    if (societyInfo) {
+                        societyInfo.style.display = 'block';
+                    }
+
+                    // Setup toggle functionality
+                    const societyToggle = document.getElementById('societyToggle');
+                    const societyContent = document.getElementById('societyContent');
+
+                    if (societyToggle && societyContent) {
+                        societyToggle.addEventListener('click', function () {
+                            this.classList.toggle('active');
+                            societyContent.classList.toggle('expanded');
+
+                            // Smooth scroll to top of info if expanding
+                            if (this.classList.contains('active')) {
+                                setTimeout(() => {
+                                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 300);
+                            }
+                        });
+                    }
+                }
+
+                // Show Canteen info if category is canteen
+                if (category === 'canteen') {
+                    const canteenInfo = document.getElementById('canteen-info');
+                    if (canteenInfo) {
+                        canteenInfo.style.display = 'block';
+                    }
+
+                    // Setup toggle functionality
+                    const canteenToggle = document.getElementById('canteenToggle');
+                    const canteenContent = document.getElementById('canteenContent');
+
+                    if (canteenToggle && canteenContent) {
+                        canteenToggle.addEventListener('click', function () {
+                            this.classList.toggle('active');
+                            canteenContent.classList.toggle('expanded');
+
+                            // Smooth scroll to top of info if expanding
+                            if (this.classList.contains('active')) {
+                                setTimeout(() => {
+                                    this.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 300);
+                            }
+                        });
+                    }
+                }
+
+                // Show Hostel info if category is hostel
+                if (category === 'hostel') {
+                    const hostelInfo = document.getElementById('hostel-info');
+                    if (hostelInfo) {
+                        hostelInfo.style.display = 'block';
+                    }
+                }
+
+                // Lightbox logic is now handled globally via event delegation in js/script.js
+
+                // Show transportation info if category is transportation
+                if (category === 'transportation') {
+                    const transInfo = document.getElementById('transportation-info');
+                    if (transInfo) {
+                        transInfo.style.display = 'block';
+                    }
+                }
+            } catch (error) {
+                console.error("Error loading facilities data:", error);
+                document.getElementById('facilities-title').innerText = "Error Loading Facilities";
+            }
+        });
+    </script>
+</body>
+
+</html>
