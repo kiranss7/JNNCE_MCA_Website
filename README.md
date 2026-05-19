@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # JNNCE MCA Department Web Portal
 
 ![JNNCE Hero](img/campus/camp11.jpeg)
@@ -58,6 +57,3 @@ Since this project has zero dependencies or build-steps, you don't need Node.js 
 
 ---
 **Maintained by:** Kiran S S (@kiranss7)
-=======
-
->>>>>>> 078d1247c365a9ebebc6e27a04b64cc4bd6686ee
