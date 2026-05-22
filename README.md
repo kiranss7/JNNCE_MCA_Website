@@ -2,8 +2,6 @@
 
 Official modernized web portal for the Master of Computer Applications (MCA) department at Jawaharlal Nehru National College of Engineering (JNNCE), Shivamogga.
 
-![Website Screenshot](img/screenshot.png) *(Please place a screenshot of your actual website here, named `screenshot.png` inside the `img` folder)*
-
 ## Features
 - **Responsive Design:** Beautiful layouts powered by custom CSS Grid and Flexbox.
 - **Interactive Facilities Explorer:** Detailed modals and drop-downs for campus infrastructure.
