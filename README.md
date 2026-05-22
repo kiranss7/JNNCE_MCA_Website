@@ -1,59 +1,38 @@
 # JNNCE MCA Department Web Portal
 
-![JNNCE Hero](img/campus/camp11.jpeg)
+Official modernized web portal for the Master of Computer Applications (MCA) department at Jawaharlal Nehru National College of Engineering (JNNCE), Shivamogga.
 
-Official modernized web portal for the **Master of Computer Applications (MCA)** department at Jawaharlal Nehru National College of Engineering (JNNCE), Shivamogga.
+![Website Screenshot](img/screenshot.png) *(Please place a screenshot of your actual website here, named `screenshot.png` inside the `img` folder)*
 
-This project aims to provide a premium, mobile-first, and highly performant digital experience for students, faculty, and prospective candidates.
+## Features
+- **Responsive Design:** Beautiful layouts powered by custom CSS Grid and Flexbox.
+- **Interactive Facilities Explorer:** Detailed modals and drop-downs for campus infrastructure.
+- **Dynamic Live Clock & Office Status:** Real-time checking for college working hours.
+- **Modern UI Components:** Smooth carousels, custom lightbox, infinite scrolling recruitments marquee, and hover effects.
+- **Print & Download Secured PDF Viewing:** PDF resumes natively open inside customized modals without toolbars.
 
----
+## Tech Stack
+- **HTML5** (Semantic structuring)
+- **CSS3** (Custom properties, animations, media queries)
+- **Vanilla JavaScript** (ES6+)
+- **FontAwesome** (Iconography)
+- **Google Fonts** (Inter & Outfit)
 
-## ✨ Key Features
+## Setup & Local Development
+Because this is a vanilla HTML/CSS/JS project, no complex build tools are required!
+1. Clone the repository: `git clone <your-repo-url>`
+2. Open `index.html` in your web browser.
+3. For the best experience during development, use an extension like **Live Server** in VS Code.
 
-- **Mobile-First Responsive Design**: Flawless layout adapting seamlessly from 4K desktop screens down to 320px mobile viewports.
-- **Modern UI/UX Aesthetics**: Implementation of glassmorphism, dynamic shadow elevations, and scroll-reveal intersection observer animations.
-- **Performant Architecture**: Zero heavy frontend frameworks. Built completely in Vanilla HTML5, CSS3, and JavaScript ensuring blazing-fast load times.
-- **Optimized Media Loading**: Implemented lazy loading and asynchronous decoding (`loading="lazy"`, `decoding="async"`) across all images and embedded PDF documents to reduce Layout Shift (CLS) and initial payload.
-- **Accessible Navigation**: Premium animated sliding mobile drawer with touch-friendly spacing, dark overlay, and Escape key listeners for enhanced accessibility.
+## Deployment to Vercel
+This project is fully ready to be deployed on Vercel.
+1. Connect your GitHub repository to Vercel.
+2. Vercel will automatically detect the static project.
+3. Leave the build commands empty and deploy!
 
-## 🛠️ Technology Stack
+> **Note:** Vercel is case-sensitive! Ensure all your image file names (`img/Hostel/1.jpeg`) match your HTML `<img src="img/Hostel/1.jpeg">` perfectly.
 
-- **Structure**: Semantic HTML5
-- **Styling**: Vanilla CSS3 (Custom design system variables, CSS Grid, Flexbox, `clamp()` fluid typography)
-- **Interactivity**: Vanilla JavaScript (ES6+ features, Intersection Observers, DOM manipulation)
-- **Icons**: FontAwesome 6
-
-## 📂 Project Structure
-
-```text
-├── css/
-│   └── style.css          # Main stylesheet with layout and component rules
-├── js/
-│   ├── script.js          # Core legacy routing and base logic
-│   └── premium-ui.js      # Advanced scroll animations and mobile navigation
-├── img/                   # Core asset directory (Optimized WebP/JPG/PNG)
-├── pdf/                   # Embedded PDFs (Resumes, Syllabi, Reports)
-├── index.html             # Landing Page
-├── departments.html       # About Us & Department Details
-├── faculty-mca.html       # Faculty Directory
-├── facilities.html        # Overview of Campus Facilities
-├── facilities-detail.html # Detailed breakdown of infrastructure
-└── contact.html           # Maps & Quick Links
-```
-
-## 🚀 Setup & Installation
-
-Since this project has zero dependencies or build-steps, you don't need Node.js or any build tools to run it.
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/kiranss7/JNNCE_MCA_Website.git
-   ```
-
-2. **Run Locally:**
-   - Simply open `index.html` in your favorite modern browser.
-   - *Alternatively, for a better development experience, use the VS Code **Live Server** extension.*
-
----
-**Maintained by:** Kiran S S (@kiranss7)
+## Developer
+Developed and maintained by **Mr. Kiran S S**, Student at the Department of MCA, JNNCE.
+- [LinkedIn Profile](https://www.linkedin.com/in/kiranss-in)
+- [GitHub Profile](https://github.com/kiranss7)

@@ -2,17 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ── Shell iframe detection ──────────────────────────────────────────────
-    // When this page is loaded inside shell.html's iframe, hide the page-level
-    // music button (the shell's button handles everything) and silence this
-    // page's own audio element so there is no conflict or double-playback.
-    if (window.self !== window.top) {
-        const pageBtn   = document.getElementById('musicToggleBtn');
-        const pageAudio = document.getElementById('bgMusic');
-        if (pageBtn)   pageBtn.style.display = 'none';
-        if (pageAudio) { pageAudio.pause(); pageAudio.removeAttribute('src'); pageAudio.load(); }
-    }
-    // ───────────────────────────────────────────────────────────────────────
 
 
     // 1. Preloader
@@ -68,11 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentLightboxIndex = currentLightboxItems.indexOf(item);
                 
                 const img = item.querySelector('img');
-                const caption = item.querySelector('.facilities-overlay span').innerText;
+                const caption = item.querySelector('.facilities-overlay span')?.innerText || '';
 
-                lightboxImg.src = img.src;
-                lightboxCaption.innerText = caption;
-                lightbox.classList.add('active');
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightboxCaption.innerText = caption;
+                    lightbox.classList.add('active');
+                }
             }
         });
 
@@ -105,9 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentLightboxItems.length === 0) return;
             const item = currentLightboxItems[currentLightboxIndex];
             const img = item.querySelector('img');
-            const caption = item.querySelector('.facilities-overlay span').innerText;
-            lightboxImg.src = img.src;
-            lightboxCaption.innerText = caption;
+            const caption = item.querySelector('.facilities-overlay span')?.innerText || '';
+            if (img && lightboxImg) {
+                lightboxImg.src = img.src;
+                lightboxCaption.innerText = caption;
+            }
         }
     }
     // 7. Live Time Footer
@@ -208,7 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const modalResume = document.getElementById('modal-resume'); // This is now an iframe
 
                 if (modalAbout) modalAbout.innerHTML = aboutText;
-                if (modalResume) modalResume.src = resumeSrc;
+                if (modalResume) {
+                    const url = new URL(resumeSrc, window.location.href);
+                    url.hash = 'toolbar=0';
+                    modalResume.src = url.toString();
+                }
 
                 // Show Modal
                 facultyModal.classList.add('active');
@@ -244,64 +241,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000); // Change image every 5 seconds
     }
 
-    // 10. Background Music Player
-    const musicBtn  = document.getElementById('musicToggleBtn');
-    let bgMusic     = document.getElementById('bgMusic');
-
-    // If not in shell and no audio element exists, create one
-    if (window.self === window.top && !bgMusic && musicBtn) {
-        bgMusic = document.createElement('audio');
-        bgMusic.id = 'bgMusic';
-        bgMusic.src = 'music.mpeg';
-        bgMusic.preload = 'auto';
-        bgMusic.loop = true;
-        document.body.appendChild(bgMusic);
-    }
-
-    if (musicBtn && bgMusic) {
-        // Restore play state across page navigations
-        const wasPlaying = sessionStorage.getItem('bgMusicPlaying') === 'true';
-        const savedTime  = parseFloat(sessionStorage.getItem('bgMusicTime') || '0');
-
-        bgMusic.loop   = true;
-        bgMusic.volume = 0.45;
-
-        // Seek to saved position before playing
-        bgMusic.addEventListener('canplay', () => {
-            if (savedTime > 0) bgMusic.currentTime = savedTime;
-        }, { once: true });
-
-        function setPlayingState(playing) {
-            if (playing) {
-                bgMusic.play().catch(() => {}); // handle autoplay policy gracefully
-                musicBtn.classList.add('playing');
-                musicBtn.innerHTML = '<i class="fa-solid fa-pause music-icon"></i>';
-                musicBtn.setAttribute('data-tooltip', 'Pause Music');
-                sessionStorage.setItem('bgMusicPlaying', 'true');
-            } else {
-                bgMusic.pause();
-                musicBtn.classList.remove('playing');
-                musicBtn.innerHTML = '<i class="fa-solid fa-music music-icon"></i>';
-                musicBtn.setAttribute('data-tooltip', 'Play Music');
-                sessionStorage.setItem('bgMusicPlaying', 'false');
-            }
-        }
-
-        // Initialise to saved state
-        setPlayingState(wasPlaying);
-
-        // Toggle on button click
-        musicBtn.addEventListener('click', () => {
-            setPlayingState(bgMusic.paused);
-        });
-
-        // Save playback position periodically so it survives navigation
-        setInterval(() => {
-            if (!bgMusic.paused) {
-                sessionStorage.setItem('bgMusicTime', bgMusic.currentTime.toString());
-            }
-        }, 1000);
-    }
 
     // 11. Full-Screen PDF Viewer
     const pdfOverlay    = document.getElementById('pdfFullscreenOverlay');
@@ -315,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!pdfOverlay || !pdfFrame) return;
         pdfFrame.src = src;
         if (pdfTitle)    pdfTitle.textContent = name || 'Resume / CV';
-        if (pdfDownload) { pdfDownload.href = src; pdfDownload.download = name || 'resume.pdf'; }
+
         pdfOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
@@ -374,5 +313,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 13. Contact Form Submission Prevent
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>Sent Successfully!</span> <i class="fa-solid fa-check"></i>';
+            btn.style.backgroundColor = '#10b981';
+            
+            setTimeout(() => {
+                contactForm.reset();
+                btn.innerHTML = originalText;
+                btn.style.backgroundColor = '';
+            }, 3000);
+        });
+    }
 
 });
