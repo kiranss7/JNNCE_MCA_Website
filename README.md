@@ -29,6 +29,8 @@ This project is fully ready to be deployed on Vercel.
 3. Leave the build commands empty and deploy!
 
 > **Note:** Vercel is case-sensitive! Ensure all your image file names (`img/Hostel/1.jpeg`) match your HTML `<img src="img/Hostel/1.jpeg">` perfectly.
+## Live Website
+https://jnnce-mca-website.vercel.app/
 
 ## Developer
 Developed and maintained by **Mr. Kiran S S**, Student at the Department of MCA, JNNCE.
