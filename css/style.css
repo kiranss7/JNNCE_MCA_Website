@@ -53,6 +53,29 @@
   box-sizing: border-box;
 }
 
+*:focus-visible {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  z-index: 10000;
+  font-weight: bold;
+  transition: top 0.3s ease;
+  border-bottom-right-radius: 8px;
+  text-decoration: none;
+}
+
+.skip-link:focus-visible {
+  top: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -63,6 +86,10 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 /* Custom Professional Scrollbar */
@@ -2149,12 +2176,14 @@ body.page-home .about-text p {
     background: var(--primary-color);
     flex-direction: column;
     padding: 80px 30px;
-    transition: right 0.3s ease;
+    transition: right 0.3s ease, visibility 0.3s ease;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
   }
 
   .nav-links.active {
     right: 0;
+    visibility: visible;
   }
 
   .menu-toggle {
@@ -2193,8 +2222,9 @@ body.page-home .about-text p {
   }
 
   .nav-links li.dropdown.mobile-open .dropdown-menu li a {
-    color: var(--secondary-color) !important;
-    padding: 8px 0 !important;
+    color: #ffffff !important;
+    padding: 10px 15px !important;
+    display: block !important;
   }
 }
 
@@ -5389,13 +5419,15 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), visibility 0.4s;
     z-index: 1200;
+    visibility: hidden;
   }
 
   .nav-links.active {
     right: 0;
     box-shadow: -8px 0 40px rgba(0, 0, 0, 0.4);
+    visibility: visible;
   }
 
   .nav-links li {
