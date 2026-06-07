@@ -39,7 +39,7 @@
   --shadow-md: 0 12px 32px rgba(11, 31, 58, 0.08);
   --shadow-lg: 0 24px 48px rgba(11, 31, 58, 0.12);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  
+
   /* Smoother Border Radii */
   --radius-sm: 12px;
   --radius-md: 20px;
@@ -245,8 +245,8 @@ img {
 
 .navbar.scrolled {
   background: rgba(11, 31, 58, 0.85);
-  
-  
+
+
   box-shadow: 0 6px 18px rgba(2, 6, 23, 0.35);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -465,28 +465,7 @@ img {
   transform: translateY(0);
 }
 
-/* ================== Hero Section & Top Nav Codes ================== */
-.top-nav-codes {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: var(--font-alt);
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #ff4d4d;
-  background: rgba(0, 0, 0, 0.25);
-  padding: 0.5rem 0.8rem;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 77, 77, 0.2);
-  
-  line-height: 1.4;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-}
-
-.top-nav-codes span {
-  letter-spacing: 0.05em;
-}
+/* ================== Hero Section ================== */
 
 .hero {
   min-height: 100dvh;
@@ -528,11 +507,25 @@ img {
 }
 
 /* Home Page Background Slideshow Images */
-.hero-slideshow .slide:nth-child(1) { background-image: url('../img/campus/camp11.jpeg'); }
-.hero-slideshow .slide:nth-child(2) { background-image: url('../img/campus/camp2.jpeg'); }
-.hero-slideshow .slide:nth-child(3) { background-image: url('../img/campus/camp13.jpeg'); }
-.hero-slideshow .slide:nth-child(4) { background-image: url('../img/campus/camp2.1.jpeg'); }
-.hero-slideshow .slide:nth-child(5) { background-image: url('../img/lib/lib4.jpeg'); }
+.hero-slideshow .slide:nth-child(1) {
+  background-image: url('../img/campus/camp11.jpeg');
+}
+
+.hero-slideshow .slide:nth-child(2) {
+  background-image: url('../img/campus/camp2.jpeg');
+}
+
+.hero-slideshow .slide:nth-child(3) {
+  background-image: url('../img/campus/camp13.jpeg');
+}
+
+.hero-slideshow .slide:nth-child(4) {
+  background-image: url('../img/campus/camp2.1.jpeg');
+}
+
+.hero-slideshow .slide:nth-child(5) {
+  background-image: url('../img/lib/lib4.jpeg');
+}
 
 .slide-overlay {
   position: absolute;
@@ -656,10 +649,6 @@ img {
 }
 
 @media (max-width: 768px) {
-  .top-nav-codes {
-    display: none;
-  }
-
   .college-name {
     font-size: 1.1rem;
   }
@@ -856,9 +845,9 @@ body.page-home .about-text p {
 
 /* ================== Departments Page Specifics ================== */
 .page-header {
-  min-height: 40vh;
+  min-height: 15vh;
   height: auto;
-  padding: 10rem 0 5rem;
+  padding: 5.5rem 0 1.5rem;
   background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
   display: flex;
   align-items: center;
@@ -870,7 +859,7 @@ body.page-home .about-text p {
 
 .page-header h1 {
   color: var(--bg-white);
-  font-size: 3.5rem;
+  font-size: 2.8rem;
 }
 
 .dept-block {
@@ -897,7 +886,7 @@ body.page-home .about-text p {
 .faculty-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 .faculty-card {
@@ -953,7 +942,7 @@ body.page-home .about-text p {
 .hod-card {
   grid-column: 1 / -1;
   max-width: 600px;
-  margin: 0 auto 3rem;
+  margin: 0 auto;
   display: flex;
   text-align: left;
   border: 2px solid var(--secondary-color);
@@ -961,7 +950,7 @@ body.page-home .about-text p {
 }
 
 .hod-card .faculty-img {
-  margin: 2rem;
+  margin: 1.5rem;
   flex-shrink: 0;
 }
 
@@ -969,7 +958,7 @@ body.page-home .about-text p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 2rem 2rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 /* ================== Facilities Page ================== */
@@ -1206,8 +1195,8 @@ body.page-home .about-text p {
   transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
     box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
     border-color 0.35s ease;
-  
-  
+
+
   opacity: 0;
   transform: translateY(30px);
   animation: eventFadeIn 0.6s ease forwards;
@@ -1969,9 +1958,9 @@ body.page-home .about-text p {
 
 /* ================== Department Specifics ================== */
 .department-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   border-bottom: 2px solid var(--bg-color);
-  padding-bottom: 1rem;
+  padding-bottom: 0.75rem;
 }
 
 .department-header p {
@@ -2109,15 +2098,24 @@ body.page-home .about-text p {
 }
 
 .department-section article {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .department-section h3 {
   font-size: 1.8rem;
   border-bottom: 2px dashed #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
+  padding-bottom: 6px;
+  margin-bottom: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.department-section p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.department-section p:last-child {
+  margin-bottom: 0;
 }
 
 .department-section h4 {
@@ -2156,12 +2154,12 @@ body.page-home .about-text p {
 @media (max-width: 768px) {
   .navbar {
     background: rgba(11, 31, 58, 0.95) !important;
-    
-    
+
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-}
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 
   .logo {
     margin-left: 2.2rem;
@@ -2191,18 +2189,18 @@ body.page-home .about-text p {
     z-index: 1001;
   }
 
-  
 
-  
 
-  
+
+
+
 
   .section-title {
     font-size: 2rem;
   }
 
   .page-header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .feature-list {
@@ -2249,7 +2247,7 @@ body.page-home .about-text p {
   }
 
   .page-header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .developer-card {
@@ -2508,19 +2506,10 @@ body.page-home .about-text p {
   }
 }
 
-  60% {
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35), 0 0 0 10px rgba(255, 193, 7, 0);
-  }
-
-  100% {
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35), 0 0 0 0 rgba(255, 193, 7, 0);
-  }
-}
 
 /* Tooltip - Positioning below the logo */
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 /* ================== Full-Screen PDF Viewer ================== */
 #pdfFullscreenOverlay {
@@ -2772,7 +2761,7 @@ body.page-home .feature-item i {
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 15px;
-  
+
   border: 1px solid rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -2867,17 +2856,20 @@ body.page-home .feature-item i {
 */
 
 @media (max-width: 768px) {
+
   /* --- 1. Global Layout & Boundary Safe Zones --- */
   body {
     overflow-x: hidden !important;
   }
 
   .container {
-    padding: 0 1.5rem !important; /* Ensure standard padding for all page elements */
+    padding: 0 1.5rem !important;
+    /* Ensure standard padding for all page elements */
   }
 
   .section {
-    padding: 3.5rem 0 !important; /* Balanced vertical spaces */
+    padding: 3.5rem 0 !important;
+    /* Balanced vertical spaces */
   }
 
   /* --- 2. Flawless Navbar and Mobile Menu --- */
@@ -2895,7 +2887,8 @@ body.page-home .feature-item i {
 
   /* Correct logo positioning and scale on mobile to avoid overflow and header collision */
   .logo {
-    margin-left: 0.5rem !important; /* Soft offset from screen edge, avoids overlap */
+    margin-left: 0.5rem !important;
+    /* Soft offset from screen edge, avoids overlap */
     max-width: 70% !important;
     font-size: 1.15rem !important;
   }
@@ -2912,7 +2905,8 @@ body.page-home .feature-item i {
   .menu-toggle {
     display: flex !important;
     z-index: 1001 !important;
-    margin-left: auto !important; /* Push far-right */
+    margin-left: auto !important;
+    /* Push far-right */
     margin-right: 0.5rem !important;
   }
 
@@ -2975,8 +2969,9 @@ body.page-home .feature-item i {
   .facilities-page-grid,
   .events-grid,
   .faculty-grid {
-    grid-template-columns: 1fr !important; /* Stack vertically for easy thumb scrolling */
-    gap: 1.8rem !important;
+    grid-template-columns: 1fr !important;
+    /* Stack vertically for easy thumb scrolling */
+    gap: 1.25rem !important;
   }
 
   #facilities-detail-grid {
@@ -2994,7 +2989,7 @@ body.page-home .feature-item i {
     border-radius: 8px !important;
   }
 
-  .modern-table th, 
+  .modern-table th,
   .modern-table td {
     padding: 0.8rem 0.85rem !important;
     font-size: 0.82rem !important;
@@ -3035,6 +3030,7 @@ body.page-home .feature-item i {
 }
 
 @media (max-width: 480px) {
+
   /* Extra styling for very small mobile screens */
   .container {
     padding: 0 1.2rem !important;
@@ -3255,7 +3251,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin-bottom: 3rem;
   border-left: 5px solid var(--secondary-color);
 }
@@ -3300,7 +3296,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border-top: 4px solid var(--secondary-color);
 }
 
@@ -3340,7 +3336,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border-top: 4px solid var(--primary-color);
 }
 
@@ -3363,7 +3359,7 @@ body.page-home .feature-item i {
   background: #fff;
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin-bottom: 3rem;
 }
 
@@ -3486,7 +3482,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3545,7 +3541,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border-top: 4px solid var(--primary-color);
 }
 
@@ -3557,7 +3553,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   border-top: 4px solid var(--secondary-color);
 }
 
@@ -3660,7 +3656,7 @@ body.page-home .feature-item i {
 }
 
 .style-ref-div-99 {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   padding: 1rem;
 }
@@ -3710,14 +3706,14 @@ body.page-home .feature-item i {
 }
 
 .style-ref-span-107 {
-  display:none;
+  display: none;
 }
 
 .style-ref-div-108 {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.2rem 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   margin-bottom: 2.5rem;
   border-left: 5px solid var(--primary-color);
 }
@@ -3741,7 +3737,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-top: 4px solid var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -3840,7 +3836,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-left: 4px solid var(--secondary-color);
   display: flex;
   gap: 1.5rem;
@@ -3854,7 +3850,7 @@ body.page-home .feature-item i {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--secondary-color);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
@@ -3912,7 +3908,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-left: 4px solid var(--primary-color);
   display: flex;
   gap: 1.5rem;
@@ -3926,7 +3922,7 @@ body.page-home .feature-item i {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--primary-color);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
 }
 
@@ -3973,7 +3969,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin-bottom: 2rem;
   border-left: 5px solid var(--secondary-color);
 }
@@ -4055,7 +4051,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin-bottom: 2rem;
   border-left: 5px solid var(--primary-color);
 }
@@ -4165,7 +4161,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin-bottom: 2.5rem;
   border-left: 5px solid var(--secondary-color);
 }
@@ -4298,7 +4294,7 @@ body.page-home .feature-item i {
   padding: 1rem;
   border-radius: 8px;
   border-left: 4px solid #c53030;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .style-ref-p-186 {
@@ -4315,7 +4311,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   margin-top: 2.5rem;
   border-left: 5px solid #c53030;
 }
@@ -4394,7 +4390,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
   border-top: 5px solid var(--primary-color);
 }
 
@@ -4418,7 +4414,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
   border-top: 5px solid var(--secondary-color);
 }
 
@@ -4473,7 +4469,7 @@ body.page-home .feature-item i {
   background: var(--bg-white);
   border-radius: 15px;
   padding: 2.5rem;
-  box-shadow: 0 4px 25px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.07);
   border-left: 6px solid var(--secondary-color);
 }
 
@@ -4751,9 +4747,20 @@ body.page-home .feature-item i {
 }
 
 @keyframes pulse-dot {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(255, 193, 7, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.5);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(255, 193, 7, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
 }
 
 .status-label {
@@ -4801,6 +4808,7 @@ body.page-home .feature-item i {
     align-items: flex-start;
     gap: 1.5rem;
   }
+
   .time-header {
     align-items: flex-start;
   }
@@ -4987,12 +4995,12 @@ body.page-home .feature-item i {
 }
 
 /* Floating label effect on focus or when input is not empty */
-.form-group input:focus ~ label,
-.form-group input:not(:placeholder-shown) ~ label,
-.form-group textarea:focus ~ label,
-.form-group textarea:not(:placeholder-shown) ~ label,
-.form-group select:focus ~ label,
-.form-group select:valid ~ label {
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label,
+.form-group select:focus~label,
+.form-group select:valid~label {
   top: -12px;
   font-size: 0.82rem;
   color: var(--secondary-color);
@@ -5009,9 +5017,9 @@ body.page-home .feature-item i {
   transition: var(--transition);
 }
 
-.form-group input:focus ~ .input-focus-line,
-.form-group select:focus ~ .input-focus-line,
-.form-group textarea:focus ~ .input-focus-line {
+.form-group input:focus~.input-focus-line,
+.form-group select:focus~.input-focus-line,
+.form-group textarea:focus~.input-focus-line {
   left: 0;
   width: 100%;
 }
@@ -5273,7 +5281,12 @@ body:not(.page-home) .about {
 }
 
 /* ── 2. PREMIUM TYPOGRAPHY HIERARCHY ─────────────────────────────────────── */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
@@ -5331,7 +5344,7 @@ body {
   border-radius: 2px;
   bottom: -2px;
   transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
-              opacity 0.3s ease;
+    opacity 0.3s ease;
 }
 
 .nav-links li a:hover {
@@ -5454,12 +5467,10 @@ body {
 
 /* ── 4. HERO SECTION CINEMATIC DEPTH ─────────────────────────────────────── */
 .slide-overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(4, 10, 22, 0.88) 0%,
-    rgba(8, 18, 38, 0.65) 45%,
-    rgba(2, 6, 20, 0.92) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(4, 10, 22, 0.88) 0%,
+      rgba(8, 18, 38, 0.65) 45%,
+      rgba(2, 6, 20, 0.92) 100%);
 }
 
 /* Subtle Ken Burns on active slide */
@@ -5468,8 +5479,13 @@ body {
 }
 
 @keyframes kenBurns {
-  from { transform: scale(1.0); }
-  to   { transform: scale(1.06); }
+  from {
+    transform: scale(1.0);
+  }
+
+  to {
+    transform: scale(1.06);
+  }
 }
 
 /* Glow ring under logo */
@@ -5638,8 +5654,8 @@ body.page-home .stat-card .stat-label {
   border-radius: var(--radius-sm, 12px);
   padding: 2.2rem 1.8rem;
   transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
-              box-shadow 0.35s ease,
-              border-bottom-color 0.35s ease;
+    box-shadow 0.35s ease,
+    border-bottom-color 0.35s ease;
 }
 
 .facility-card:hover {
@@ -5649,7 +5665,7 @@ body.page-home .stat-card .stat-label {
 
 .facility-icon {
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              color 0.3s ease;
+    color 0.3s ease;
 }
 
 .facility-card:hover .facility-icon {
@@ -5657,12 +5673,29 @@ body.page-home .stat-card .stat-label {
 }
 
 /* Stagger reveal for facility cards */
-.facilities-grid .facility-card:nth-child(1) { --delay: 0ms; }
-.facilities-grid .facility-card:nth-child(2) { --delay: 80ms; }
-.facilities-grid .facility-card:nth-child(3) { --delay: 160ms; }
-.facilities-grid .facility-card:nth-child(4) { --delay: 240ms; }
-.facilities-grid .facility-card:nth-child(5) { --delay: 320ms; }
-.facilities-grid .facility-card:nth-child(6) { --delay: 400ms; }
+.facilities-grid .facility-card:nth-child(1) {
+  --delay: 0ms;
+}
+
+.facilities-grid .facility-card:nth-child(2) {
+  --delay: 80ms;
+}
+
+.facilities-grid .facility-card:nth-child(3) {
+  --delay: 160ms;
+}
+
+.facilities-grid .facility-card:nth-child(4) {
+  --delay: 240ms;
+}
+
+.facilities-grid .facility-card:nth-child(5) {
+  --delay: 320ms;
+}
+
+.facilities-grid .facility-card:nth-child(6) {
+  --delay: 400ms;
+}
 
 .facilities-grid .facility-card.reveal-visible {
   animation-delay: var(--delay, 0ms);
@@ -5722,7 +5755,7 @@ body.page-home .stat-card .stat-label {
   opacity: 0;
   transform: translateY(28px);
   transition: opacity 0.65s cubic-bezier(0.25, 0.8, 0.25, 1),
-              transform 0.65s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform 0.65s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .reveal.reveal-visible {
@@ -5731,12 +5764,29 @@ body.page-home .stat-card .stat-label {
 }
 
 /* Stagger delays for child elements */
-.reveal-stagger > *:nth-child(1) { transition-delay: 0ms; }
-.reveal-stagger > *:nth-child(2) { transition-delay: 80ms; }
-.reveal-stagger > *:nth-child(3) { transition-delay: 160ms; }
-.reveal-stagger > *:nth-child(4) { transition-delay: 240ms; }
-.reveal-stagger > *:nth-child(5) { transition-delay: 320ms; }
-.reveal-stagger > *:nth-child(6) { transition-delay: 400ms; }
+.reveal-stagger>*:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.reveal-stagger>*:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.reveal-stagger>*:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.reveal-stagger>*:nth-child(4) {
+  transition-delay: 240ms;
+}
+
+.reveal-stagger>*:nth-child(5) {
+  transition-delay: 320ms;
+}
+
+.reveal-stagger>*:nth-child(6) {
+  transition-delay: 400ms;
+}
 
 /* Fade from left */
 .reveal-left {
@@ -5812,12 +5862,12 @@ button:focus-visible,
 
 /* ── 11. PAGE HEADER IMPROVEMENTS ────────────────────────────────────────── */
 .page-header {
-  min-height: 35vh;
-  padding: 9rem 0 4rem;
+  min-height: 15vh;
+  padding: 5.5rem 0 1.5rem;
 }
 
 .page-header h1 {
-  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
   letter-spacing: -0.02em;
   font-weight: 800;
 }
@@ -5971,7 +6021,8 @@ button:focus-visible,
   }
 
   .page-header {
-    padding: 7.5rem 0 3rem;
+    min-height: 12vh;
+    padding: 5rem 0 1.25rem;
   }
 
   .contact-grid {
@@ -6041,6 +6092,7 @@ footer {
 
 /* ── 15. PRINT SAFETY ────────────────────────────────────────────────────── */
 @media print {
+
   .navbar,
   .menu-toggle,
   #backToTop,
@@ -6098,16 +6150,19 @@ footer {
 
 /* ── 15. MOBILE-FIRST RESPONSIVENESS & UX FIXES ──────────────────────────── */
 @media (max-width: 600px) {
+
   /* Faculty Cards Fix */
   .faculty-grid {
     grid-template-columns: 1fr;
   }
+
   .faculty-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem;
   }
+
   .faculty-img {
     width: 120px;
     height: 120px;
@@ -6120,15 +6175,18 @@ footer {
     gap: 1.5rem;
     padding: 0 1.5rem;
   }
+
   .hero-btns-center {
     flex-direction: column;
     width: 100%;
     gap: 1rem;
   }
+
   .hero-btns-center .btn {
     width: 100%;
     text-align: center;
   }
+
   .college-logo-center {
     width: 100px;
     height: 100px;
@@ -6139,7 +6197,7 @@ footer {
     max-width: 100%;
     height: auto;
   }
-  
+
   /* Prevent horizontal scrolling & jumps */
   body {
     overflow-x: hidden;
@@ -6147,14 +6205,18 @@ footer {
 }
 
 @media (max-width: 425px) {
+
   /* Global spacing polish */
   .section {
     padding: 3rem 1rem;
   }
+
   .container {
     padding: 0 1rem;
   }
+
   .page-header {
-    padding: 6rem 1rem 2rem;
+    min-height: 0;
+    padding: 4.5rem 1rem 1.25rem;
   }
 }
